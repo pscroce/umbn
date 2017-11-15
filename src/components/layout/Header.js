@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <header style={styles.header}>
       <h3 style={styles.title}>State of Attn</h3>
-      <img src={logo} style={styles.logo} alt="Eye" />
+      {/* <img src={logo} style={styles.logo} alt="Eye" /> */}
       {/* <Navigation /> */}
 
     </header>
