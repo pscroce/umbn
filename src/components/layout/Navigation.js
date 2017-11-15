@@ -1,6 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 import { NavLink } from 'react-router-dom';
+import '../../index.css';
 
 function Navigation(props) {
   return (

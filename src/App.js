@@ -6,8 +6,8 @@ import ReactRouter, {
   Switch } from 'react-router-dom';
 import Offline from 'react-offline';
 
-import AppContents from './components/AppContents';
-import OnlineMessage from './components/OnlineMessage';
+import AppContents from './components/layout/AppContents';
+import OnlineMessage from './components/layout/OnlineMessage';
 
 class App extends Component {
   render() {

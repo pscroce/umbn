@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './Header';
-import Body from './Body';
-import Footer from './Footer';
+import Header from '../layout/Header';
+import Body from '../layout/Body';
+import Footer from '../layout/Footer';
 
 function About() {
   return (

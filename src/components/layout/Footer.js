@@ -1,20 +1,18 @@
 import React from 'react';
 import Radium from 'radium';
-import Navigation from './Navigation';
-import logo from '../imgs/logo.svg';
+import logo from '../../imgs/logo.svg';
 
-function Header(props) {
+function Footer(props) {
   return (
-    <header style={styles.header}>
+    <footer style={styles.footer}>
       <div style={styles.left}>
         <img src={logo} style={styles.logo} alt="React Logo" />
-        <h3 style={styles.title}>State of Attn</h3>
+        <h3 style={styles.title}>React Sandbox</h3>
       </div>
       <div style={styles.right}>
       </div>
-      {/* <Navigation /> */}
 
-    </header>
+    </footer>
   )
 }
 
@@ -23,9 +21,8 @@ const spinKeyframes = Radium.keyframes({
   '100%': { transform: 'rotate(360deg)' }
 });
 const styles = {
-  header: {
+  footer: {
     backgroundColor: '#fff',
-    boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
     display: 'flex',
     height: 50,
     padding: '0 2rem',
@@ -46,7 +43,10 @@ const styles = {
   left: {
     display: 'flex',
   },
+  right: {
+    width: '50%',
+  }
 }
 
 
-export default Radium(Header);
+export default Radium(Footer);
