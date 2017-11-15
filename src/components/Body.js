@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
-import Demonstration from './demonstration/Demonstration';
 import Intro from './Intro';
 import Section from './Section';
 
@@ -12,7 +11,6 @@ class Body extends Component {
           <Intro />
         </Section>
         <Section>
-          <Demonstration />
         </Section>
 
       </div>

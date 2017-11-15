@@ -8,11 +8,11 @@ function Header(props) {
     <header style={styles.header}>
       <div style={styles.left}>
         <img src={logo} style={styles.logo} alt="React Logo" />
-        <h3 style={styles.title}>React Sandbox</h3>
+        <h3 style={styles.title}>State of Attn</h3>
       </div>
       <div style={styles.right}>
-        <Navigation />
       </div>
+      {/* <Navigation /> */}
 
     </header>
   )

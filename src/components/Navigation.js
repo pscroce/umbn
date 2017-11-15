@@ -1,21 +1,27 @@
 import React from 'react';
 import Radium from 'radium';
+import { NavLink } from 'react-router-dom';
 
 function Navigation(props) {
-  //'Platform', 'Services', 'Customer Love', 'Who Uses Us', 'About'
-  const nav = [];
   return (
     <ul style={styles.list}>
-      {nav.map( (item) => {
-        return (
-          <li
-            key={item}
-            style={styles.navItem}
-            >
-              {item}
-            </li>
-        )
-      })}
+      <li>
+        <NavLink
+          style={styles.navItem}
+          activeClassName="active"
+          exact
+          to='/'>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          style={styles.navItem}
+          activeClassName="active"
+          to='/about'>
+          About
+        </NavLink>
+      </li>
     </ul>
   )
 }
@@ -23,10 +29,15 @@ function Navigation(props) {
 const styles = {
   list: {
     display: 'flex',
-    justifyContent: 'space-between',
+    listStyle: 'none',
+    margin: 0,
   },
   navItem: {
-    listStyle: 'none',
+    display: 'flex',
+    alignSelf: 'center',
+    color: 'gray',
+    textDecoration: 'none',
+    margin: 10,
     fontFamily: '-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif',
   }
 }
