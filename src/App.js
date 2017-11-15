@@ -30,6 +30,7 @@ class App extends Component {
 const styles = {
   app: {
     backgroundColor: '#e2e1e0',
+    color: '#3d3d3d',
     minHeight: '100vh',
   }
 }

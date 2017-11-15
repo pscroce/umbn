@@ -3,6 +3,9 @@ import Radium from 'radium';
 import Intro from './Intro';
 import Section from './Section';
 
+// Posts
+import PostOne from './posts/PostOne';
+
 class Body extends Component {
   render() {
     return (
@@ -11,6 +14,7 @@ class Body extends Component {
           <Intro />
         </Section>
         <Section>
+          <PostOne />
         </Section>
 
       </div>
@@ -19,7 +23,9 @@ class Body extends Component {
 }
 
 const styles = {
-
+  body: {
+    paddingBottom: '2rem',
+  }
 }
 
 export default Radium(Body);

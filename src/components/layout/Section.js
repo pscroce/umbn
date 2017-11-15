@@ -16,7 +16,7 @@ const styles = {
     borderRadius: 3,
     padding: '2rem 5rem 2rem 5rem',
     maxWidth: 800,
-    margin: '2em 0',
+    margin: '2rem 0',
     '@media (max-width: 992px)': {
       padding: '20px',
     },
