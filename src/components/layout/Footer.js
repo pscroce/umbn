@@ -6,8 +6,8 @@ function Footer(props) {
   return (
     <footer style={styles.footer}>
       <div style={styles.left}>
-        <img src={logo} style={styles.logo} alt="React Logo" />
-        <h3 style={styles.title}>React Sandbox</h3>
+        {/* <img src={logo} style={styles.logo} alt="Eye" /> */}
+        <h3 style={styles.title}>State of Attn</h3>
       </div>
       <div style={styles.right}>
       </div>
@@ -23,15 +23,19 @@ const spinKeyframes = Radium.keyframes({
 const styles = {
   footer: {
     backgroundColor: '#fff',
+    boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
     display: 'flex',
-    height: 50,
-    padding: '0 2rem',
+    height: 60,
+    padding: '0 5rem',
+    maxWidth: 800,
+
     '@media (max-width: 992px)': {
       padding: '20px',
     },
   },
   title: {
     alignSelf: 'center',
+    marginRight: 20,
   },
   logo: {
     alignSelf: 'center',
@@ -40,12 +44,6 @@ const styles = {
     display: 'flex',
     height: 30,
   },
-  left: {
-    display: 'flex',
-  },
-  right: {
-    width: '50%',
-  }
 }
 
 

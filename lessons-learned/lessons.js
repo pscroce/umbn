@@ -8,6 +8,8 @@
 
 // eye moving around
 // https://codepen.io/carpenumidium/pen/rmPebP
+// and my edit of it
+// https://codepen.io/pscroce/pen/rYYRNY
 
 // another eye moving around
 // https://codepen.io/CriticalMammal/pen/mJzLKv?q=eye&limit=all&type=type-pens
