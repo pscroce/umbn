@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
-import ReactRouter, {
-  BrowserRouter as Router,
-  Route,
-  Switch } from 'react-router-dom';
 import Offline from 'react-offline';
 
 import AppContents from './components/layout/AppContents';

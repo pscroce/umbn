@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
-import Navigation from './Navigation';
-import logo from '../../imgs/logo.svg';
+// import Navigation from './Navigation';
+// import logo from '../../imgs/logo.svg';
 
 function Header(props) {
   return (
