@@ -3,6 +3,7 @@ import Radium from 'radium';
 import Intro from './Intro';
 import Section from './Section';
 import DistressedEye from './DistressedEye';
+import { Link } from 'react-router-dom';
 
 // Posts
 import PostOne from './posts/PostOne';
@@ -20,6 +21,9 @@ class Body extends Component {
         </Section>
         <Section>
           <DistressedEye></DistressedEye>
+        </Section>
+        <Section>
+          <Link to='/how' >But how did you make it?</Link>
         </Section>
 
       </div>

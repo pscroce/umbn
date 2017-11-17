@@ -25,6 +25,7 @@ const styles = {
     backgroundColor: '#fff',
     boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
     display: 'flex',
+    alignItems: 'center',
     height: 60,
     padding: '0 5rem',
     maxWidth: 800,

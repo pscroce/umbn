@@ -18,7 +18,6 @@ function How() {
         <h3>CSS into Radium</h3>
         <p>Peter used <a href="https://github.com/FormidableLabs/css-to-radium">this NPM module CLI utility</a> by <a href="https://github.com/alexlande">Alex Lande</a> at <a href="https://formidable.com/">Formidable Labs</a>.</p>
       </Section>
-      <Footer></Footer>
     </div>
   )
 }
