@@ -8,6 +8,8 @@ import About from '../pages/About';
 import Home from '../pages/Home';
 import How from '../pages/How';
 
+import '../../index.css';
+
 function AppContents() {
   return (
     <Router>
