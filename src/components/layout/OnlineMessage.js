@@ -7,34 +7,37 @@ function OnlineMessage() {
       <h2 style={styles.offlineTitle}>You must be offline to view this page.</h2>
       <br/>
       <p style={styles.mobile}>Enable airplane mode to continue.</p>
-      <p style={styles.desktop}>Disconnect to continue.</p>
+      <p style={styles.desktop}>Disconnect from WiFi to continue.</p>
     </div>
   )
 }
 
 const styles = {
   offline: {
-    alignItems: 'center',
     display: 'flex',
+    alignItems: 'center',
     flexDirection: 'column',
     justifyContent: 'center',
     padding: '0 20px',
-    width: '100%',
+    height: '100vh',
+    maxHeight: '100vh',
+    fontSize: '1.25rem',
+    textAlign: 'center',
+    '@media (min-width: 480px)': {
+      fontSize: '2.5rem',
+    },
   },
   offlineTitle: {
-    alignSelf: 'center',
     display: 'flex',
-    flex: '1',
-    marginTop: '30vh',
-    textAlign: 'center',
+    alignSelf: 'center',
   },
   mobile: {
-    '@media (min-width: 993px)': {
+    '@media (min-width: 480px)': {
       display: 'none',
     },
   },
   desktop: {
-    '@media (max-width: 993px)': {
+    '@media (max-width: 480px)': {
       display: 'none',
     },
   }
