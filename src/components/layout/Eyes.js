@@ -1,12 +1,13 @@
 import React from 'react';
 import Radium from 'radium';
 
-import Eyes from '../layout/Eyes';
+import Eye from '../layout/Eye';
 
-function Home() {
+function Eyes() {
   return (
     <div style={styles.container}>
-      <Eyes></Eyes>
+      <Eye style={styles.leftEye}></Eye>
+      <Eye style={styles.rightEye}></Eye>
     </div>
   )
 }
@@ -15,9 +16,8 @@ const styles = {
   container: {
     display: 'flex',
     justifyContent: 'space-around',
-    alignItems: 'center',
-    minHeight: '100vh',
+    width: '100%',
   },
 }
 
-export default Radium(Home);
+export default Radium(Eyes);

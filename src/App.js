@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Radium, { StyleRoot } from 'radium';
-import Offline from 'react-offline';
 
 import {
   BrowserRouter as Router,
@@ -40,7 +39,7 @@ class App extends Component {
 
 const styles = {
   app: {
-    backgroundColor: '#e2e1e0',
+    backgroundColor: '#52a5b4',
     color: '#3d3d3d',
     minHeight: '100vh',
   }
