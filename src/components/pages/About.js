@@ -1,11 +1,13 @@
 import React from 'react';
 
-import Body from '../layout/Body';
+import Section from '../layout/Section';
 
 function About() {
   return (
     <div>
-      <Body></Body>
+      <Section>
+        
+      </Section>
     </div>
   )
 }
