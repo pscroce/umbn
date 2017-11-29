@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../layout/Header';
 import Section from '../../layout/Section';
 import '../../../styles/littlefoot-default.css';
 import { default as littlefoot } from 'littlefoot';
@@ -83,11 +82,9 @@ class PostOneContent extends React.Component {
 function PostOne() {
   return (
     <div>
-      <Header></Header>
       <Section>
         <PostOneContent></PostOneContent>
       </Section>
-      <Header></Header>
     </div>
   )
 }

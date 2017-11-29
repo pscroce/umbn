@@ -1,14 +1,11 @@
 import React from 'react';
 
-import Header from '../layout/Header';
 import Section from '../layout/Section';
-import Footer from '../layout/Footer';
 
 
 function How() {
   return (
     <div>
-      <Header></Header>
       <Section>
         <h2>How did you make that...</h2>
         <h3>Blinking Eye</h3>
@@ -20,7 +17,6 @@ function How() {
         <h3>Those footnotes that pop open</h3>
         <p>We used <a href="https://www.npmjs.com/package/littlefoot">littlefoot</a>, a fork of Chris Sauve's <a href="https://github.com/lemonmade/bigfoot/">Bigfoot.js</a>.</p>
       </Section>
-      <Footer></Footer>
     </div>
   )
 }
