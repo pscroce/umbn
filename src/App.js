@@ -10,14 +10,8 @@ class App extends Component {
     return (
       <StyleRoot>
         <div style={styles.app}>
-          <Offline
-            onChange={({ isOffline, isOnline }) => console.log({ isOffline, isOnline })}
-            render={({ isOffline, isOnline }) => {
-                return isOffline ? <AppContents /> : <OnlineMessage />;
-            }}
-          />
+          <AppContents />
         </div>
-
       </StyleRoot>
     );
   }

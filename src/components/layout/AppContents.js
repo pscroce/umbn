@@ -8,6 +8,9 @@ import About from '../pages/About';
 import Home from '../pages/Home';
 import How from '../pages/How';
 
+// Posts
+import PostOne from '../pages/posts/PostOne';
+
 import '../../index.css';
 
 function AppContents() {
@@ -18,9 +21,8 @@ function AppContents() {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/how' component={How} />
-          <Route render={function() {
-            return <p>Not Found</p>
-          }} />
+          <Route path='/posts/one' component={PostOne} />
+          <Route component={Home} />
         </Switch>
       </div>
     </Router>

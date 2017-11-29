@@ -11,7 +11,7 @@ function Section(props) {
 
 const styles = {
   section: {
-    boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+    boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
     backgroundColor: '#fff',
     borderRadius: 3,
     padding: '2rem 5rem 2rem 5rem',

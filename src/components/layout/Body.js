@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
+import { Link } from 'react-router-dom';
+
 import Intro from './Intro';
 import Section from './Section';
 import DistressedEye from './DistressedEye';
-import { Link } from 'react-router-dom';
+import VeryDistressedEye from './VeryDistressedEye';
 
-// Posts
-import PostOne from './posts/PostOne';
 
 class Body extends Component {
   render() {
     return (
       <div style={styles.body}>
-        <Section>
+        {/* <Section>
           <Intro />
-        </Section>
+        </Section> */}
 
         <Section>
-          <PostOne />
-        </Section>
-        <Section>
           <DistressedEye></DistressedEye>
+          <VeryDistressedEye />
         </Section>
-        <Section>
-          <Link to='/how' >But how did you make it?</Link>
-        </Section>
+        {/* <Section>
+          <Link to='/how'>But how did you make it?</Link>
+        </Section> */}
 
       </div>
     )
