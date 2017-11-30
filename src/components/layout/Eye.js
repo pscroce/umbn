@@ -68,7 +68,7 @@ const styles = {
   },
   eye: {
     position: 'absolute',
-    
+
     closed: {
       opacity: 1,
       animation: 'x 1s 2',

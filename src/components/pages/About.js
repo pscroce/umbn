@@ -4,7 +4,6 @@ import Radium from 'radium';
 import Paragraph from '../layout/Paragraph';
 import Section from '../layout/Section';
 import Subtitle from '../layout/Subtitle';
-import Title from '../layout/Title';
 
 function About() {
   return (
@@ -26,4 +25,4 @@ const styles = {
   }
 }
 
-export default About;
+export default Radium(About);

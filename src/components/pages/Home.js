@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Eye from '../layout/Eye';
 import Label from '../layout/Label';
 import Section from '../layout/Section';
-import Subtitle from '../layout/Subtitle';
 import Title from '../layout/Title';
 
 function Home() {
