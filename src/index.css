@@ -14,10 +14,12 @@ p {
   opacity: 0;
   transition: opacity .5s ease-in-out;
 }
-.eye-link:hover h2 {
+.eye-link:hover h2,
+.eye-link:active h2  {
   opacity: 1;
 }
-.eye-link h2:hover {
+.eye-link h2:hover,
+.eye-link h2:active {
   opacity: 1;
 }
 @font-face {
