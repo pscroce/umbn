@@ -1,19 +1,19 @@
 import React from 'react';
 import Radium from 'radium';
 
-function Paragraph(props) {
+function ParagraphBold(props) {
   return (
-    <p style={styles.paragraph}>
+    <p style={styles.paragraphBold}>
       {props.children}
     </p>
   )
 }
 
 const styles = {
-  paragraph: {
+  paragraphBold: {
     color: 'white',
     fontSize: '2em',
-    fontFamily: 'Athletics-Regular',
+    fontFamily: 'Athletics-Bold',
     margin: '2em 0 0 0',
     '@media (max-width: 480px)': { // mobile
       fontSize: '1em',
@@ -21,4 +21,4 @@ const styles = {
   },
 }
 
-export default Radium(Paragraph);
+export default Radium(ParagraphBold);

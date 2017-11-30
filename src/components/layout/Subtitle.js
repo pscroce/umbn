@@ -12,6 +12,7 @@ const styles = {
     color: 'white',
     fontSize: '7em',
     fontFamily: 'Athletics-Bold',
+    lineHeight: 1.2,
     margin: 0,
     '@media (max-width: 1197px)': { // smaller laptops
       fontSize: '6em',
