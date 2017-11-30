@@ -1,8 +1,6 @@
 import React from 'react';
 import Radium from 'radium';
 
-import { Link } from 'react-router-dom';
-
 function BlinkingEye() {
   return (
     <div style={styles.eye}>

@@ -11,14 +11,10 @@ function Section(props) {
 
 const styles = {
   section: {
-    boxShadow: '0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)',
-    backgroundColor: '#fff',
-    borderRadius: 3,
-    padding: '2rem 5rem 2rem 5rem',
-    maxWidth: 800,
-    margin: '2rem 0',
-    '@media (max-width: 992px)': {
-      padding: '20px',
+    minHeight: '100vh',
+    margin: '0 50px',
+    '@media (max-width: 480px)': {
+      margin: '0 15px',
     },
   },
 }

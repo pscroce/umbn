@@ -41,7 +41,6 @@ const styles = {
   app: {
     backgroundColor: '#52a5b4',
     color: '#3d3d3d',
-    minHeight: '100vh',
   }
 }
 

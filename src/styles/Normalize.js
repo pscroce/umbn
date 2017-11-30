@@ -27,7 +27,8 @@ export default {
     display: 'none'
   },
   'a' : {
-    backgroundColor: 'transparent'
+    backgroundColor: 'transparent',
+    textDecoration: 'none'
   },
   'a:active, a:hover': {
     outline: 0
@@ -43,7 +44,7 @@ export default {
   },
   'h1' : {
     fontSize: '2em',
-    margin: '0.67em 0'
+    margin: '0'
   },
   'h2' : {
     fontSize: '1.5em',

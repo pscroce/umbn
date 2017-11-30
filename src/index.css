@@ -10,3 +10,21 @@ p {
   line-height: 1.5;
   word-break: break-word;
 }
+.eye-link h2 {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+.eye-link:hover h2 {
+  opacity: 1;
+}
+.eye-link h2:hover {
+  opacity: 1;
+}
+@font-face {
+  font-family: 'Athletics-Regular';
+  src: local('Athletics-Regular'), url(./fonts/Athletics-Regular.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Athletics-Bold';
+  src: local('Athletics-Bold'), url(./fonts/Athletics-Bold.otf) format('opentype');
+}
