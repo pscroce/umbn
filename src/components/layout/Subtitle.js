@@ -9,12 +9,18 @@ function Subtitle(props) {
 
 const styles = {
   subtitle: {
-    textAlign: 'center',
     color: 'white',
-    fontSize: '2em',
+    fontSize: '7em',
     fontFamily: 'Athletics-Bold',
+    margin: 0,
+    '@media (max-width: 1197px)': { // smaller laptops
+      fontSize: '6em',
+    },
+    '@media (max-width: 992px)': { // tablet
+      fontSize: '4em',
+    },
     '@media (max-width: 480px)': { // mobile
-      fontSize: '1.25em',
+      fontSize: '3em',
     },
   },
 }

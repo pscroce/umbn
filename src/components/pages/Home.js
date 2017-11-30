@@ -3,9 +3,10 @@ import Radium from 'radium';
 import { Link } from 'react-router-dom';
 
 import Eye from '../layout/Eye';
+import Label from '../layout/Label';
 import Section from '../layout/Section';
-import Title from '../layout/Title';
 import Subtitle from '../layout/Subtitle';
+import Title from '../layout/Title';
 
 function Home() {
   return (
@@ -16,11 +17,11 @@ function Home() {
       <div style={styles.eyeArea}>
         <div style={styles.leftSide} className='eye-link'>
           <Eye></Eye>
-          <Subtitle text='Request a kit'></Subtitle>
+          <Label text='Request a kit' style={styles.subtitle}></Label>
         </div>
         <Link to='/about' style={styles.rightSide} className='eye-link'>
           <Eye></Eye>
-          <Subtitle text='Learn more'></Subtitle>
+          <Label text='Learn more' style={styles.subtitle}></Label>
         </Link>
       </div>
     </Section>
