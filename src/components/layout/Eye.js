@@ -65,6 +65,9 @@ const styles = {
   container: {
     position: 'relative',
     minHeight: '100%',
+    '@media (max-width: 480px)': { // mobile
+      minHeight: '150px',
+    },
   },
   eye: {
     position: 'absolute',

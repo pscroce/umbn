@@ -33,12 +33,15 @@ const styles = {
     minHeight: '40vh',
     display: 'flex',
     alignItems: 'center',
+    '@media (max-width: 480px)': { // mobile
+      minHeight: '25vh',
+    },
   },
   eyeArea: {
     display: 'flex',
     minHeight: '40vh',
     '@media (max-width: 480px)': { // mobile
-      minHeight: '30vh',
+      minHeight: '25vh',
     },
   },
   leftSide: {

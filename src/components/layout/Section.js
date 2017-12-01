@@ -11,7 +11,6 @@ function Section(props) {
 
 const styles = {
   section: {
-    minHeight: '100vh',
     margin: '0 50px',
     padding: '50px 0',
     '@media (max-width: 480px)': {
