@@ -73,23 +73,21 @@ const styles = {
       opacity: 1,
       animation: 'x 1s 2',
       animationName: closedKeyframes,
-      ':hover': {
-        opacity: 0,
-      },
     },
     half: {
       opacity: 0,
       animation: 'x 1s 2',
       animationName: halfKeyframes,
-      ':hover': {
-
-      },
     },
     open: {
       opacity: 0,
       animation: 'x 1s 2',
       animationName: openKeyframes,
       ':hover': {
+        backgroundColor: '#52a5b4',
+        opacity: 1,
+      },
+      ':active': {
         backgroundColor: '#52a5b4',
         opacity: 1,
       },
