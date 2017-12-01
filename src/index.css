@@ -22,6 +22,12 @@ p {
 .eye-link h3:active {
   opacity: 1;
 }
+@media (max-width: 480px) {
+  .eye-link h3 {
+    opacity: 1;
+  }
+}
+
 @font-face {
   font-family: 'Athletics-Bold';
   src: local('Athletics-Bold'), url(./fonts/Athletics-Bold.otf) format('opentype');

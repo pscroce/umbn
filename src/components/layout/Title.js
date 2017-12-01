@@ -18,6 +18,12 @@ const styles = {
     '@media (max-width: 992px)': { // tablet
       fontSize: '6em',
     },
+    '@media (max-width: 649px)': { // large mobile
+      fontSize: '5em',
+    },
+    '@media (max-width: 557px)': { // medium mobile
+      fontSize: '4em',
+    },
     '@media (max-width: 480px)': { // mobile
       fontSize: '3em',
     },

@@ -16,7 +16,7 @@ function About() {
       </Online>
       <Offline>
         <Section>
-          <Subtitle text='They say absence makes the heart grow stronger.'></Subtitle>
+          <Subtitle text='They say absence makes the heart grow fonder.'></Subtitle>
           <div style={styles.textArea}>
             <Paragraph>
               And maybe it will. Or maybe, after your Away Day, you will realise that your phone was weighing you down, eating up your time and increasing your anxiety.

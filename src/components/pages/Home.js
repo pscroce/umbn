@@ -11,7 +11,7 @@ function Home() {
   return (
     <Section>
       <div style={styles.titleArea}>
-        <Title text='Take a break'></Title>
+        <Title text='Take a break.'></Title>
       </div>
       <div style={styles.eyeArea}>
         <div style={styles.leftSide} className='eye-link'>
@@ -32,6 +32,7 @@ const styles = {
     minHeight: '40vh',
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
   },
   eyeArea: {
     display: 'flex',
