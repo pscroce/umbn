@@ -13,5 +13,22 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    <script type="text/javascript">
+      function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) {
+        L.start({"baseUrl": "mc.us17.list-manage.com", "uuid": "dc4a1fb1c3f1c11204a3416f8", "lid": "d92b768f22"})
+        })
+      };
+      function attachListener() {
+        document.getElementById("open-popup").onclick = function() {
+          document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+          document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+          showMailingPopUp()
+        };
+      }
+      window.setTimeout(attachListener, 2000);
+
+    </script>
   </body>
 </html>

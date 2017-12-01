@@ -8,16 +8,17 @@ import Section from '../layout/Section';
 import Title from '../layout/Title';
 
 function Home() {
+
   return (
     <Section>
       <div style={styles.titleArea}>
         <Title text='Take a break.' style={styles.title} />
       </div>
       <div style={styles.eyeArea}>
-        <div style={styles.leftSide} className='eye-link'>
+        <button style={styles.leftSide} className='eye-link' id='open-popup'>
           <Eye />
           <Label text='Request a kit' style={styles.subtitle} />
-        </div>
+        </button>
         <Link to='/about' style={styles.rightSide} className='eye-link'>
           <Eye />
           <Label text='Learn more' style={styles.subtitle} />
