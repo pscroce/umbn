@@ -11,16 +11,16 @@ function Home() {
   return (
     <Section>
       <div style={styles.titleArea}>
-        <Title text='Take a break.'></Title>
+        <Title text='Take a break.' style={styles.title} />
       </div>
       <div style={styles.eyeArea}>
         <div style={styles.leftSide} className='eye-link'>
-          <Eye></Eye>
-          <Label text='Request a kit' style={styles.subtitle}></Label>
+          <Eye />
+          <Label text='Request a kit' style={styles.subtitle} />
         </div>
         <Link to='/about' style={styles.rightSide} className='eye-link'>
-          <Eye></Eye>
-          <Label text='Learn more' style={styles.subtitle}></Label>
+          <Eye />
+          <Label text='Learn more' style={styles.subtitle} />
         </Link>
       </div>
     </Section>
@@ -32,7 +32,6 @@ const styles = {
     minHeight: '40vh',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
   },
   eyeArea: {
     display: 'flex',

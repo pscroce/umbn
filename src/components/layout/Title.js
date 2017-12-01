@@ -12,6 +12,8 @@ const styles = {
     color: 'white',
     fontSize: '12em',
     fontFamily: 'Athletics-Bold',
+    textAlign: 'center',
+    width: '100%',
     '@media (max-width: 1197px)': { // smaller laptops
       fontSize: '9em',
     },
