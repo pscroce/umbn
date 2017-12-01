@@ -27,7 +27,7 @@ const styles = {
       fontSize: '4em',
     },
     '@media (max-width: 480px)': { // mobile
-      fontSize: '3em',
+      fontSize: '2.75em',
     },
   },
 }
