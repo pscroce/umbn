@@ -15,13 +15,13 @@ function Home() {
         <Title text='Take a break.' style={styles.title} />
       </div>
       <div style={styles.eyeArea}>
-        <button style={styles.leftSide} className='eye-link' id='open-popup'>
+        <button style={[styles.leftSide, styles.buttonResets]} className='eye-link' id='open-popup'>
           <Eye />
-          <Label text='Request a kit' style={styles.subtitle} />
+          <Label text='Request a kit' />
         </button>
         <Link to='/about' style={styles.rightSide} className='eye-link'>
           <Eye />
-          <Label text='Learn more' style={styles.subtitle} />
+          <Label text='Learn more' />
         </Link>
       </div>
     </Section>
@@ -49,6 +49,27 @@ const styles = {
   },
   rightSide: {
     width: '50%',
+  },
+
+  // Begin button resets to make eye buttons work.
+  buttonResets: {
+    backgroundColor: 'transparent',
+    display: 'inline-block',
+    border: 'none',
+    borderRadius: 0,
+    height: 'auto',
+    minHeight: '100%',
+    margin: 0,
+    padding: 0,
+    overflow: 'hidden',
+    ':focus': {
+      outline: 0,
+      margin: 0
+    },
+    ':active': {
+      outline: 0,
+      margin: 0
+    },
   },
 }
 

@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "radium": "css-to-radium < utils/css.css > utils/css.js"
   },
   "devDependencies": {
     "css-to-radium": "^1.0.3"
