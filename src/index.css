@@ -27,22 +27,6 @@ p {
     opacity: 1;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @font-face {
   font-family: 'Athletics-Bold';
   src: local('Athletics-Bold'), url(./fonts/Athletics-Bold.otf) format('opentype');
