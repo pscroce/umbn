@@ -23,20 +23,6 @@ function Eye() {
   )
 }
 
-// const blinkKeyframes = Radium.keyframes({
-//   '90%':  { transform: 'none',
-//            AnimationTimingFunction: 'ease-in', },
-//   '93%':  { transform: 'translateY(30px) scaleY(0)' },
-//   '100%': { animationTimingFunction: 'ease-out' }
-// });
-
-// const hideshowKeyframes = Radium.keyframes ({
-//   '0%':   { display: 'none' },
-//   '10%':  { display: 'none' },
-//   '15%':  { display: 'initial' },
-//   '100%': { display: 'initial' },
-// });
-
 const openKeyframes = Radium.keyframes ({
   '0%':   { opacity: 1 },
   '89%':  { opacity: 1 },
@@ -64,9 +50,10 @@ const closedKeyframes = Radium.keyframes ({
 const styles = {
   container: {
     position: 'relative',
-    minHeight: '100%',
+    minHeight: '40vh',
+    overflow: 'hidden',
     '@media (max-width: 480px)': { // mobile
-      minHeight: '150px',
+      minHeight: '25vh',
     },
   },
   eye: {

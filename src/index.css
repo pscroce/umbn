@@ -84,17 +84,15 @@ button:active {
   background-color: transparent;
   display: inline-block;
   border: none;
-  border: none;
   border-radius: 0;
   height: auto;
   min-height: 100%;
-  line-height: 2.5;
   margin: 0.25em;
   padding: 0;
-  width: 14em;
   overflow: hidden;
 }
-button:focus {
+button:focus,
+button:active {
   outline: 0;
   margin: 0;
 }
