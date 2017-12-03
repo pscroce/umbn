@@ -4,7 +4,14 @@ body {
   font-family: sans-serif;
 }
 .active {
-  font-weight: bold;
+  color: white;
+}
+.nav-item {
+  color: rgba(255,255,255,0.2);
+  transition: all 0.5s ease-in-out;
+}
+.nav-item:hover {
+  color: rgba(255,255,255,1);
 }
 p {
   line-height: 1.5;
@@ -34,4 +41,20 @@ p {
 @font-face {
   font-family: 'Athletics-Regular';
   src: local('Athletics-Regular'), url(./fonts/Athletics-Regular.otf) format('opentype');
+}
+/* Posts */
+.blog-post-text-area {
+  color: white;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+@media (max-width: 992px) {
+  .blog-post-text-area {
+    margin-right: 0;
+  }
+}
+.blog-post-text-area p {
+  font-family: 'Athletics-Regular', sans-serif;
+  line-height: 1.75;
 }

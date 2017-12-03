@@ -10,7 +10,6 @@ function Label(props) {
 const styles = {
   label: {
     color: 'white',
-    textAlign: 'center',
     fontSize: '2em',
     fontFamily: 'Athletics-Bold',
     margin: 0,

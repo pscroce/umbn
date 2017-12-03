@@ -6,6 +6,8 @@ import {
   Route,
   Switch } from 'react-router-dom';
 
+import Navigation from './components/layout/Navigation';
+
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import How from './components/pages/How';
@@ -22,6 +24,8 @@ class App extends Component {
         <div style={styles.app}>
           <Router>
             <div>
+              <Navigation />
+
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />

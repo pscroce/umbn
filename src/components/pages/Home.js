@@ -46,9 +46,11 @@ const styles = {
   },
   leftSide: {
     width: '50%',
+    textAlign: 'center',
   },
   rightSide: {
     width: '50%',
+    textAlign: 'center',
   },
 
   // Begin button resets to make eye buttons work.
