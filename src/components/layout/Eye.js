@@ -53,7 +53,7 @@ const styles = {
     minHeight: '40vh',
     overflow: 'hidden',
     '@media (max-width: 480px)': { // mobile
-      minHeight: '25vh',
+      minHeight: '30vh',
     },
   },
   eye: {

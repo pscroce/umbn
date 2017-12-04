@@ -15,7 +15,7 @@ const styles = {
     padding: '50px 0',
     '@media (max-width: 480px)': {
       margin: '0 15px',
-      padding: '15px 0',
+      padding: '50px 0 15px 0',
     },
   },
 }

@@ -34,14 +34,14 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     '@media (max-width: 480px)': { // mobile
-      minHeight: '25vh',
+      minHeight: '30vh',
     },
   },
   eyeArea: {
     display: 'flex',
     minHeight: '40vh',
     '@media (max-width: 480px)': { // mobile
-      minHeight: '25vh',
+      minHeight: '30vh',
     },
   },
   leftSide: {
