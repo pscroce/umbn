@@ -61,3 +61,12 @@ p {
   color: white;
   cursor: default;
 }
+
+.mc-banner {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .mc-modal, .mc-modal-bg {
+    visibility: visible !important;
+  }
+}
