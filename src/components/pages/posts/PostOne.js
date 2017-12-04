@@ -50,24 +50,24 @@ class PostOneContent extends React.Component {
             </sup>
              with a furious scowl.</p>
           <p>Ding. Ethan Musgrove Re: Noodles. She forgot about the elbow and kept her eyes down.</p>
-          <div class="footnotes">
+          <div className="footnotes">
             <ol>
-              <li class="footnote" id="fn:1">
+              <li className="footnote" id="fn:1">
                 <p>Although Anna didn’t read the Times notification about the indigenous children, the man peeking over her shoulder, Alex Okalik, did.<a href="#fnref:1" title="return to article"> ↩</a></p>
               </li>
-              <li class="footnote" id="fn:2">
+              <li className="footnote" id="fn:2">
                 <p>Alex heard the swoosh as he breathed in, futilely attempting to shrink his six-foot-two frame as others filled every possible inch around him. He thought about his family in Ottawa, his grandmother’s repeated tale of being wrenched from her village. He noticed Anna’s hair, a dark, glistening ginger.<a href="#fnref:2" title="return to article"> ↩</a></p>
               </li>
-              <li class="footnote" id="fn:3">
+              <li className="footnote" id="fn:3">
                 <p>Hapley, J. The Mayor of London, Sadiq Khan, will suspend service on all westbound lines following explosion. The Guardian. [online] p.1. Available at: http://www.theguardian.com/society/2021/19/oct/explosion-undergroundkhan [Accessed 19 Oct. 2021].<a href="#fnref:3" title="return to article"> ↩</a></p>
               </li>
-              <li class="footnote" id="fn:4">
+              <li className="footnote" id="fn:4">
                 <p>She’s hot, Alex thought. He imagined her ginger hair on his pillow, considered how to start a conversation.<a href="#fnref:4" title="return to article"> ↩</a></p>
               </li>
-              <li class="footnote" id="fn:5">
+              <li className="footnote" id="fn:5">
                 <p>Hyland, S. (2021) Telephone conversation with Marianne Hyland, 19 October. “Your father was hurt,” her mother spoke harshly through her tears on the other end of the line. “ Please get off and come home, Sophia.”<a href="#fnref:5" title="return to article"> ↩</a></p>
               </li>
-              <li class="footnote" id="fn:6">
+              <li className="footnote" id="fn:6">
                 <p>Alex Okalik, six foot two, age 34. Dreamy blue eyes. Interests: Wine, Passive Aggressive Emailing, Dogs. Four friends in common. One meter away.<a href="#fnref:6" title="return to article"> ↩</a></p>
               </li>
             </ol>
