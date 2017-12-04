@@ -24,10 +24,22 @@
       };
       function attachListener() {
         document.getElementById("open-popup").onclick = function() {
-          showMailingPopUp()
+          if (navigator.onLine) {
+            showMailingPopUp()
+          } else {
+            alert("You must go back online to request a kit. :)");
+          }
         };
       }
-      window.setInterval(attachListener, 100);
+      window.setTimeout(attachListener, 100);
+
+      function reAttachListener() {
+        if (!document.getElementById("open-popup").onclick) {
+          window.setTimeout(attachListener, 100);
+        }
+      }
+      window.setInterval(reAttachListener, 100);
+
 
     </script>
   </body>
