@@ -10,32 +10,25 @@ import Title from '../layout/Title';
 function Home() {
 
   return (
-    <div style={styles.homePage}>
-      <Section>
-        <div style={styles.titleArea}>
-          <Title text='Take a break.' style={styles.title} />
-        </div>
-        <div style={styles.eyeArea}>
-          <button style={[styles.leftSide, styles.buttonResets]} className='eye-link' id='open-popup'>
-            <Eye />
-            <Label text='Request a kit' />
-          </button>
-          <Link to='/about' style={styles.rightSide} className='eye-link'>
-            <Eye />
-            <Label text='Learn more' />
-          </Link>
-        </div>
-      </Section>
-    </div>
+    <Section>
+      <div style={styles.titleArea}>
+        <Title text='Take a break.' style={styles.title} />
+      </div>
+      <div style={styles.eyeArea}>
+        <button style={[styles.leftSide, styles.buttonResets]} className='eye-link' id='open-popup'>
+          <Eye />
+          <Label text='Request a kit' />
+        </button>
+        <Link to='/about' style={styles.rightSide} className='eye-link'>
+          <Eye />
+          <Label text='Learn more' />
+        </Link>
+      </div>
+    </Section>
   )
 }
 
 const styles = {
-  homePage: {
-    position: 'fixed',
-    width: '100%',
-    top: 35,
-  },
   titleArea: {
     minHeight: '40vh',
     display: 'flex',
