@@ -12,11 +12,11 @@ function Paragraph(props) {
 const styles = {
   paragraph: {
     color: 'white',
-    fontSize: '2em',
+    fontSize: '1.25em',
     fontFamily: 'Athletics-Regular',
     margin: '2em 0 0 0',
     '@media (max-width: 480px)': { // mobile
-      fontSize: '1em',
+      fontSize: '1.125em',
     },
   },
 }
