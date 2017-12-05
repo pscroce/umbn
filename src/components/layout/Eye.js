@@ -78,10 +78,6 @@ const styles = {
         backgroundColor: '#52a5b4',
         opacity: 1,
       },
-      ':active': {
-        backgroundColor: '#52a5b4',
-        opacity: 1,
-      },
     },
   },
 }
