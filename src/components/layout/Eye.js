@@ -47,6 +47,34 @@ const closedKeyframes = Radium.keyframes ({
   '100%': { opacity: 1 },
 });
 
+// Need to add a flutter of eye open/close between 0 and 17
+// const openKeyframes = Radium.keyframes ({
+//   '0%'   : { opacity: 1 },
+//   '17.8%': { opacity: 1 },
+//   '18%'  : { opacity: 0 },
+//   '18.2%': { opacity: 0 },
+//   '20%'  : { opacity: 0 },
+//   '100%' : { opacity: 0 },
+// });
+//
+// const halfKeyframes = Radium.keyframes ({
+//   '0%'   : { opacity: 0 },
+//   '17.8%': { opacity: 0 },
+//   '18%'  : { opacity: 1 },
+//   '18.2%': { opacity: 0 },
+//   '20%'  : { opacity: 0 },
+//   '100%' : { opacity: 0 },
+// });
+//
+// const closedKeyframes = Radium.keyframes ({
+//   '0%'   : { opacity: 0 },
+//   '17.8%': { opacity: 0 },
+//   '18%'  : { opacity: 0 },
+//   '18.2%': { opacity: 1 },
+//   '20%'  : { opacity: 1 },
+//   '100%' : { opacity: 1 },
+// });
+
 const styles = {
   container: {
     position: 'relative',
