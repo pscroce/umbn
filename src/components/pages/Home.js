@@ -12,7 +12,7 @@ function Home() {
   return (
     <Section>
       <div style={styles.titleArea}>
-        <Title text='Take a break.' style={styles.title} />
+        <Title text='Paying attn?' style={styles.title} />
       </div>
       <div style={styles.eyeArea}>
         <button style={[styles.leftSide, styles.buttonResets]} className='eye-link' id='open-popup'>
