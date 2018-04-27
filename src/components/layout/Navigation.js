@@ -24,7 +24,7 @@ function Navigation(props) {
           className="nav-item"
           activeClassName="active"
           to='/about'>
-          About
+          Why
         </NavLink>
       </li>
       <li>
