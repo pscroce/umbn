@@ -1,6 +1,8 @@
 import React from 'react';
 import Radium from 'radium';
+import { Online, Offline } from 'react-detect-offline';
 
+import OnlineMessage from '../../layout/OnlineMessage';
 import Subtitle from '../../layout/Subtitle';
 import Label from '../../layout/Label';
 import Section from '../../layout/Section';
@@ -81,9 +83,14 @@ class PostOneContent extends React.Component {
 function PostOne() {
   return (
     <div>
-      <Section>
-        <PostOneContent></PostOneContent>
-      </Section>
+      <Online>
+        <OnlineMessage />
+      </Online>
+      <Offline>
+        <Section>
+          <PostOneContent></PostOneContent>
+        </Section>
+      </Offline>
     </div>
   )
 }

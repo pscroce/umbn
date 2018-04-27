@@ -33,7 +33,7 @@ function Navigation(props) {
           className="nav-item"
           activeClassName="active"
           to='/posts/one'>
-          Blog
+          Story
         </NavLink>
       </li>
     </ul>
