@@ -2,23 +2,49 @@ import React from 'react';
 import Radium from 'radium';
 import { Link } from 'react-router-dom';
 
-import Eye from '../layout/Eye';
-import Label from '../layout/Label';
 import Section from '../layout/Section';
 import Title from '../layout/Title';
-import Form from '../layout/Form';
+import Subtitle from '../layout/Subtitle';
 import Footer from '../layout/Footer';
+import laughingImg from '../../imgs/laughing.jpg';
+import legoImg from '../../imgs/lego.jpg';
+
 
 function Home() {
 
   return (
     <div>
-      <Section>
-        <div style={styles.heroArea}>
-          <Title text='Human-Centered Design Collaborative' style={styles.title} />
-        </div>
-        <Form></Form>
-      </Section>
+      <div style={styles.heroArea}>
+        {/* <img
+          style={styles.laughingImg}
+          src={laughingImg}
+          alt="People laughing with LEGO"/> */}
+        <Title text='Transform Meetings' style={styles.title} />
+        <Subtitle text='We help teams develop creative solutions to diverse challenges using methods such as LEGO® Serious Play.'></Subtitle>
+
+      </div>
+      <div style={styles.divider}>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Title text="We've done it for these brands and we can do it for you."></Title>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+      </div>
+      <div style={styles.heroArea2}>
+        {/* <img
+          style={styles.laughingImg}
+          src={laughingImg}
+          alt="People laughing with LEGO"/> */}
+        {/* <Title text='Human-Centered Design Collaborative' style={styles.title} /> */}
+      </div>
       <Footer></Footer>
     </div>
   )
@@ -26,12 +52,30 @@ function Home() {
 
 const styles = {
   heroArea: {
+    backgroundImage: `url(${laughingImg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    minHeight: '100vh',
+    '@media (max-width: 480px)': { // mobile
+
+    },
+  },
+  heroArea2: {
+    backgroundImage: `url(${legoImg})`,
+    backgroundSize: '100%',
     minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
     '@media (max-width: 480px)': { // mobile
 
     },
+  },
+  divider: {
+    background: '#65a3d6',
   },
   eyeArea: {
     display: 'flex',

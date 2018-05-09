@@ -9,26 +9,28 @@ function Title(props) {
 
 const styles = {
   title: {
-    color: '#3d3d3d',
-    fontSize: '12em',
+    color: 'white',
+    fontSize: '6em',
     fontFamily: 'Lato-Medium',
-    textAlign: 'center',
+    textAlign: 'right',
+    paddingRight: 30,
     width: '100%',
-    '@media (max-width: 1197px)': { // smaller laptops
-      fontSize: '9em',
-    },
-    '@media (max-width: 992px)': { // tablet
-      fontSize: '6em',
-    },
-    '@media (max-width: 649px)': { // large mobile
-      fontSize: '5em',
-    },
-    '@media (max-width: 557px)': { // medium mobile
-      fontSize: '4em',
-    },
-    '@media (max-width: 480px)': { // mobile
-      fontSize: '2.75em',
-    },
+    display: 'block',
+    // '@media (max-width: 1197px)': { // smaller laptops
+    //   fontSize: '9em',
+    // },
+    // '@media (max-width: 992px)': { // tablet
+    //   fontSize: '6em',
+    // },
+    // '@media (max-width: 649px)': { // large mobile
+    //   fontSize: '5em',
+    // },
+    // '@media (max-width: 557px)': { // medium mobile
+    //   fontSize: '4em',
+    // },
+    // '@media (max-width: 480px)': { // mobile
+    //   fontSize: '2.75em',
+    // },
   },
 }
 

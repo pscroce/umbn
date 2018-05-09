@@ -18,8 +18,8 @@ const styles = {
   wordmark: {
     height: '50px',
     position: 'absolute',
-    top: '30px',
-    left: '40px',
+    top: '20px',
+    right: '30px',
   },
   hamburgerMenu: {
     display: 'flex',
