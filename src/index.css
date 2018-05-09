@@ -40,7 +40,7 @@ p {
 }
 /* Posts */
 .blog-post-text-area {
-  color: white;
+  color: #3d3d3d;
   max-width: 750px;
   margin-left: auto;
   margin-right: 50px;
@@ -56,15 +56,24 @@ p {
 }
 /* Posts */
 .nav-item {
-  color: rgba(255,255,255,0.2);
-  transition: all 0.5s ease-in-out;
+  color: #3d3d3d;
+  transition: all 0.3s ease-in-out;
+  padding: 0 30px 0 10px;
+  font-size: 3rem;
+
+  background-image: linear-gradient(195deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
 }
 .nav-item:hover {
-  color: rgba(255,255,255,1);
+  color: #65a3d6;
+  background-size: 100% 100%;
 }
 .active {
-  color: white;
+  color: #65a3d6;
   cursor: default;
+  background-image: linear-gradient(195deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
+  background-size: 100% 100%;
 }
 
 .mc-banner {
@@ -75,3 +84,32 @@ p {
     visibility: visible !important;
   }
 }
+
+/*
+Brand colors
+
+Primary
+hex: #65a3d6
+rgb: 101, 163, 214
+cmyk: 59, 25, 1, 0
+
+Secondary
+hex: #004787
+rgb: 0, 71, 135
+cmyk: 100, 81, 20, 5
+
+Dark Accent
+hex: #1c1c1c
+rgb: 28, 28, 28
+cmyk: 72, 66, 65, 77
+
+Mid Accent
+hex: #777777
+rgb: 119, 119, 119
+cmyk: 55, 46, 46, 11
+
+Light Accent
+hex: #bcbcbc
+rgb: 188, 188, 188
+cmyk: 27, 21, 21, 0
+*/

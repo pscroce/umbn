@@ -14,7 +14,7 @@ function OnlineMessage() {
 
 const styles = {
   offline: {
-    color: 'white',
+    color: '#3d3d3d',
     fontFamily: 'Athletics-Regular',
     display: 'flex',
     alignItems: 'center',

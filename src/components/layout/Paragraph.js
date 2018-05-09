@@ -11,7 +11,7 @@ function Paragraph(props) {
 
 const styles = {
   paragraph: {
-    color: 'white',
+    color: '#3d3d3d',
     fontSize: '1.25em',
     fontFamily: 'Athletics-Regular',
     margin: '2em 0 0 0',

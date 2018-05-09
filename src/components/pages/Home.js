@@ -6,13 +6,14 @@ import Eye from '../layout/Eye';
 import Label from '../layout/Label';
 import Section from '../layout/Section';
 import Title from '../layout/Title';
+import Form from '../layout/Form';
 
 function Home() {
 
   return (
     <Section>
-      <div style={styles.titleArea}>
-        <Title text='Focus?' style={styles.title} />
+      <div style={styles.heroArea}>
+        <Title text='Human-Centered Design Collaborative' style={styles.title} />
       </div>
       <div style={styles.eyeArea}>
         <button style={[styles.leftSide, styles.buttonResets]} className='eye-link' id='open-popup'>
@@ -24,17 +25,18 @@ function Home() {
           <Label text='Learn more' />
         </Link>
       </div>
+      <Form></Form>
     </Section>
   )
 }
 
 const styles = {
-  titleArea: {
-    minHeight: '40vh',
+  heroArea: {
+    minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
     '@media (max-width: 480px)': { // mobile
-      minHeight: '30vh',
+
     },
   },
   eyeArea: {

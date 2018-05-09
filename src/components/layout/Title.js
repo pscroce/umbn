@@ -9,7 +9,7 @@ function Title(props) {
 
 const styles = {
   title: {
-    color: 'white',
+    color: '#3d3d3d',
     fontSize: '12em',
     fontFamily: 'Athletics-Bold',
     textAlign: 'center',

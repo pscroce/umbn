@@ -11,7 +11,7 @@ function ParagraphBold(props) {
 
 const styles = {
   paragraphBold: {
-    color: 'white',
+    color: '#3d3d3d',
     fontSize: '2em',
     fontFamily: 'Athletics-Bold',
     margin: '2em 0 0 0',

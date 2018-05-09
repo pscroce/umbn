@@ -6,41 +6,12 @@
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v=2">
-    <title>Focus?</title>
+    <title>UMBN</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-    <script type="text/javascript">
-      function showMailingPopUp() {
-        document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-        document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-        require(["mojo/signup-forms/Loader"], function(L) {
-        L.start({"baseUrl": "mc.us17.list-manage.com", "uuid": "dc4a1fb1c3f1c11204a3416f8", "lid": "d92b768f22"})
-        })
-      };
-      function attachListener() {
-        document.getElementById("open-popup").onclick = function() {
-          if (navigator.onLine) {
-            showMailingPopUp()
-          } else {
-            alert("You must go back online to request a kit. :)");
-          }
-        };
-      }
-      window.setTimeout(attachListener, 100);
-
-      function reAttachListener() {
-        if (!document.getElementById("open-popup").onclick) {
-          window.setTimeout(attachListener, 100);
-        }
-      }
-      window.setInterval(reAttachListener, 100);
-
-
-    </script>
   </body>
 </html>

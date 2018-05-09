@@ -9,7 +9,7 @@ function Subtitle(props) {
 
 const styles = {
   subtitle: {
-    color: 'white',
+    color: '#3d3d3d',
     fontSize: '7em',
     fontFamily: 'Athletics-Bold',
     lineHeight: 1.2,
