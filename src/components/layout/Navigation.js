@@ -10,38 +10,6 @@ function Navigation() {
   return (
     <div>
       <img src={wordmark} style={styles.wordmark} alt="UMBN Wordmark"/>
-
-      <ul style={styles.navItems}>
-
-        <li>
-          <NavLink
-            style={styles.navItem}
-            className="nav-item"
-            activeClassName="active"
-            exact
-            to='/'>
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            style={styles.navItem}
-            className="nav-item"
-            activeClassName="active"
-            to='/about'>
-            Why
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            style={styles.navItem}
-            className="nav-item"
-            activeClassName="active"
-            to='/posts/one'>
-            Story
-          </NavLink>
-        </li>
-      </ul>
     </div>
   )
 }

@@ -104,3 +104,27 @@ const styles = {
 }
 
 export default Radium(HamburgerMenu);
+
+/*
+
+.nav-item {
+  color: #3d3d3d;
+  transition: all 0.3s ease-in-out;
+  padding: 0 30px 0 10px;
+  font-size: 3rem;
+
+  background-image: linear-gradient(195deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+}
+.nav-item:hover {
+  color: #65a3d6;
+  background-size: 100% 100%;
+}
+.active {
+  color: #65a3d6;
+  cursor: default;
+  background-image: linear-gradient(195deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
+  background-size: 100% 100%;
+}
+*/

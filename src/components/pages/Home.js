@@ -7,26 +7,20 @@ import Label from '../layout/Label';
 import Section from '../layout/Section';
 import Title from '../layout/Title';
 import Form from '../layout/Form';
+import Footer from '../layout/Footer';
 
 function Home() {
 
   return (
-    <Section>
-      <div style={styles.heroArea}>
-        <Title text='Human-Centered Design Collaborative' style={styles.title} />
-      </div>
-      <div style={styles.eyeArea}>
-        <button style={[styles.leftSide, styles.buttonResets]} className='eye-link' id='open-popup'>
-          <Eye />
-          <Label text='Request a kit' />
-        </button>
-        <Link to='/about' style={styles.rightSide} className='eye-link'>
-          <Eye />
-          <Label text='Learn more' />
-        </Link>
-      </div>
-      <Form></Form>
-    </Section>
+    <div>
+      <Section>
+        <div style={styles.heroArea}>
+          <Title text='Human-Centered Design Collaborative' style={styles.title} />
+        </div>
+        <Form></Form>
+      </Section>
+      <Footer></Footer>
+    </div>
   )
 }
 
