@@ -11,7 +11,7 @@ const styles = {
   label: {
     color: '#3d3d3d',
     fontSize: '2em',
-    fontFamily: 'Athletics-Regular',
+    fontFamily: 'Lato-Light',
     margin: 0,
     '@media (max-width: 480px)': { // mobile
       fontSize: '1.25em',

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Lato-Light', sans-serif;
 }
 p {
   line-height: 1.5;
@@ -31,12 +31,12 @@ p {
   }
 }
 @font-face {
-  font-family: 'Athletics-Bold';
-  src: local('Athletics-Bold'), url(./fonts/Athletics-Bold.otf) format('opentype');
+  font-family: 'Lato-Medium';
+  src: local('Lato-Medium'), url(./fonts/Lato-Medium.ttf) format('opentype');
 }
 @font-face {
-  font-family: 'Athletics-Regular';
-  src: local('Athletics-Regular'), url(./fonts/Athletics-Regular.otf) format('opentype');
+  font-family: 'Lato-Light';
+  src: local('Lato-Light'), url(./fonts/Lato-Light.ttf) format('opentype');
 }
 /* Posts */
 .blog-post-text-area {
@@ -51,7 +51,7 @@ p {
   }
 }
 .blog-post-text-area p {
-  font-family: 'Athletics-Regular', sans-serif;
+  font-family: 'Lato-Light', sans-serif;
   line-height: 1.75;
 }
 /* Posts */

@@ -13,7 +13,7 @@ const styles = {
   paragraphBold: {
     color: '#3d3d3d',
     fontSize: '2em',
-    fontFamily: 'Athletics-Bold',
+    fontFamily: 'Lato-Medium',
     margin: '2em 0 0 0',
     '@media (max-width: 480px)': { // mobile
       fontSize: '1.25em',

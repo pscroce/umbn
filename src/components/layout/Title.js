@@ -11,7 +11,7 @@ const styles = {
   title: {
     color: '#3d3d3d',
     fontSize: '12em',
-    fontFamily: 'Athletics-Bold',
+    fontFamily: 'Lato-Medium',
     textAlign: 'center',
     width: '100%',
     '@media (max-width: 1197px)': { // smaller laptops

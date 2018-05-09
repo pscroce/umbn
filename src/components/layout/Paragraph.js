@@ -13,7 +13,7 @@ const styles = {
   paragraph: {
     color: '#3d3d3d',
     fontSize: '1.25em',
-    fontFamily: 'Athletics-Regular',
+    fontFamily: 'Lato-Light',
     margin: '2em 0 0 0',
     '@media (max-width: 480px)': { // mobile
       fontSize: '1.125em',

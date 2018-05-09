@@ -15,7 +15,7 @@ function OnlineMessage() {
 const styles = {
   offline: {
     color: '#3d3d3d',
-    fontFamily: 'Athletics-Regular',
+    fontFamily: 'Lato-Light',
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
@@ -32,7 +32,7 @@ const styles = {
   offlineTitle: {
     display: 'flex',
     alignSelf: 'center',
-    fontFamily: 'Athletics-Bold',
+    fontFamily: 'Lato-Medium',
   },
   mobile: {
     '@media (min-width: 480px)': {

@@ -42,7 +42,7 @@ const styles = {
     alignSelf: 'center',
     textDecoration: 'none',
     margin: 10,
-    fontFamily: 'Athletics-Bold, sans-serif',
+    fontFamily: 'Lato-Medium, sans-serif',
   },
 }
 

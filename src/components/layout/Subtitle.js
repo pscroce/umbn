@@ -11,7 +11,7 @@ const styles = {
   subtitle: {
     color: '#3d3d3d',
     fontSize: '7em',
-    fontFamily: 'Athletics-Bold',
+    fontFamily: 'Lato-Medium',
     lineHeight: 1.2,
     margin: 0,
     '@media (max-width: 1197px)': { // smaller laptops
