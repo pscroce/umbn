@@ -10,21 +10,18 @@ function Subtitle(props) {
 const styles = {
   subtitle: {
     color: '#eee',
-    fontSize: '3em',
+    fontSize: '2em',
     fontFamily: 'Lato-Medium',
     lineHeight: 1.2,
     display: 'block',
-    width: '60%',
     // '@media (max-width: 1197px)': { // smaller laptops
     //   fontSize: '9em',
     // },
     '@media (max-width: 992px)': { // tablet
-      fontSize: '2em',
-      width: '80%',
+      fontSize: '1.5em',
     },
     '@media (max-width: 649px)': { // large mobile
-      fontSize: '1.5em',
-      width: '100%',
+      fontSize: '1.25em',
     },
     // '@media (max-width: 557px)': { // medium mobile
     //   fontSize: '4em',

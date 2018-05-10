@@ -10,20 +10,17 @@ function Title(props) {
 const styles = {
   title: {
     color: '#eee',
-    fontSize: '6em',
+    fontSize: '4em',
     fontFamily: 'Lato-Medium',
-    width: '100%',
     display: 'block',
     // '@media (max-width: 1197px)': { // smaller laptops
     //   fontSize: '9em',
     // },
     '@media (max-width: 992px)': { // tablet
-      fontSize: '4em',
-      width: '80%',
+      fontSize: '2.5em',
     },
     '@media (max-width: 649px)': { // large mobile
-      fontSize: '2em',
-      width: '100%',
+      fontSize: '1.75em',
     },
     // '@media (max-width: 557px)': { // medium mobile
     //   fontSize: '4em',
