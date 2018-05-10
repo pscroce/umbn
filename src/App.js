@@ -37,6 +37,7 @@ class App extends Component {
 
 const styles = {
   app: {
+    backgroundColor: '#eee',
     minHeight: '100vh',
     width: '100%',
     overflow: 'hidden',

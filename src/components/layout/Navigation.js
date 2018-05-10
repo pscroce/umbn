@@ -16,10 +16,15 @@ function Navigation() {
 
 const styles = {
   wordmark: {
-    height: '50px',
+    height: 50,
     position: 'absolute',
-    top: '20px',
-    right: '30px',
+    top: 20,
+    left: 30,
+    '@media (max-width: 480px)': {
+      height: 27,
+      top: 10,
+      left: 10,
+    },
   },
   hamburgerMenu: {
     display: 'flex',

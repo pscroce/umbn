@@ -9,22 +9,28 @@ function Subtitle(props) {
 
 const styles = {
   subtitle: {
-    color: 'white',
+    color: '#eee',
     fontSize: '3em',
     fontFamily: 'Lato-Medium',
-    textAlign: 'right',
     lineHeight: 1.2,
-    paddingRight: 30,
     display: 'block',
+    width: '60%',
     // '@media (max-width: 1197px)': { // smaller laptops
-    //   fontSize: '6em',
+    //   fontSize: '9em',
     // },
-    // '@media (max-width: 992px)': { // tablet
+    '@media (max-width: 992px)': { // tablet
+      fontSize: '2em',
+      width: '80%',
+    },
+    '@media (max-width: 649px)': { // large mobile
+      fontSize: '1.5em',
+      width: '100%',
+    },
+    // '@media (max-width: 557px)': { // medium mobile
     //   fontSize: '4em',
     // },
     // '@media (max-width: 480px)': { // mobile
-    //   fontSize: '2.5em',
-    //   lineHeight: 1,
+    //   fontSize: '2.75em',
     // },
   },
 }

@@ -11,11 +11,9 @@ function Section(props) {
 
 const styles = {
   section: {
-    margin: '0 50px',
-    padding: '50px 0',
+    margin: 30,
     '@media (max-width: 480px)': {
-      margin: '0 15px',
-      padding: '50px 0 15px 0',
+      margin: '30px 10px',
     },
   },
 }

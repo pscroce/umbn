@@ -29,11 +29,22 @@ const styles = {
     alignItems: 'center',
     width: '100%',
     height: 200,
+    '@media (max-width: 480px)': { // mobile
+      height: 150,
+    },
   },
   footerText: {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '50%',
+    width: '90%',
+    margin: 0,
+    '@media (max-width: 992px)': { // tablet
+      width: '100%',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'space-around',
+      height: '100%',
+    },
   },
   instagramIcon: {
     color: '#3d3d3d',
