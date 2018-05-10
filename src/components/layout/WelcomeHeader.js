@@ -14,9 +14,13 @@ function WelcomeHeader() {
       <div style={styles.welcomeHeader}>
       <Section>
         <SectionLeft>
-          <Title text='Transform Meetings' style={styles.title} />
+          <Title style={styles.title}>
+            Transform Meetings
+          </Title>
 
-          <Subtitle text='We know play is key to productive and creative business. And we know how to get there.'></Subtitle>
+          <Subtitle>
+            We know play is key to productive and creative business. And we know how to get there.
+          </Subtitle>
 
         </SectionLeft>
       </Section>

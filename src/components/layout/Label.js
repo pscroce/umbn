@@ -3,18 +3,20 @@ import Radium from 'radium';
 
 function Label(props) {
   return (
-    <h3 style={styles.label}>{props.text}</h3>
+    <p style={styles.label}>
+      {props.children}
+    </p>
   )
 }
 
 const styles = {
   label: {
-    color: '#3d3d3d',
-    fontSize: '2em',
+    color: '#eee',
+    fontSize: '1.25em',
     fontFamily: 'Lato-Light',
     margin: 0,
     '@media (max-width: 480px)': { // mobile
-      fontSize: '1.25em',
+      fontSize: '1.125em',
     },
   },
 }

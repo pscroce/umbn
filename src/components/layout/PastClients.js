@@ -13,7 +13,9 @@ function PastClients() {
       <br/>
       <Section>
         <SectionLeft>
-          <Title text="We've done it for them. We can do it for you."></Title>
+          <Title>
+            We've done it for them. We can do it for you.
+          </Title>
         </SectionLeft>
       </Section>
       {/* <div style={styles.logoList}>

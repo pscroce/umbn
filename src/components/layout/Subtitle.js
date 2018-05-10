@@ -3,7 +3,7 @@ import Radium from 'radium';
 
 function Subtitle(props) {
   return (
-    <h2 style={styles.subtitle}>{props.text}</h2>
+    <h2 style={styles.subtitle}>{props.children}</h2>
   )
 }
 

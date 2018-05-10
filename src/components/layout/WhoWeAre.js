@@ -4,6 +4,7 @@ import Radium from 'radium';
 import Section from '../layout/Section';
 import Subtitle from '../layout/Subtitle';
 import Paragraph from '../layout/Paragraph';
+import Label from '../layout/Label';
 
 import annemarieImg from '../../imgs/annemarie.jpg';
 
@@ -12,15 +13,23 @@ function WhoWeAre() {
     <Section>
       <div style={styles.whoWeAre}>
         <div style={styles.whoWeAre.aboutAnnemarie}>
-          <Subtitle text="Annemarie Boss"></Subtitle>
-          <Paragraph text="Annemarie Boss is a blah blah blah."></Paragraph>
+          <Subtitle>
+            Annemarie Boss
+          </Subtitle>
+          <Label>
+            Lead Facilitator
+          </Label>
+          <Paragraph>
+            Working with teams and an endless supply of post-it notes is Annemarie's forte. Through a diverse set of techniques for any occasion, she runs effective group sessions that result in actionable next steps.
+          </Paragraph>
         </div>
-        <div style={styles.whoWeAre.annemarie}>
-          <img
+
+          <div style={styles.whoWeAre.annemarieImg}></div>
+          {/* <img
             style={styles.whoWeAre.annemarieImg}
             src={annemarieImg}
-            alt="Annemarie Boss facilitating a group of people building with LEGO."/>
-        </div>
+            alt="Annemarie Boss facilitating a group of people building with LEGO."/> */}
+        <div style={styles.whoWeAre.annemarie}></div>
       </div>
     </Section>
   )
@@ -36,20 +45,30 @@ const backgroundColor = '#eee';
 const styles = {
   whoWeAre: {
     display: 'flex',
-    '@media (max-width: 480px)': { // mobile
+    '@media (max-width: 649px)': { // large mobile
       flexDirection: 'column',
     },
     aboutAnnemarie: {
-      width: '100%',
+      width: '50%',
       backgroundColor: lightGray,
       padding: 30,
+      '@media (max-width: 649px)': { // large mobile
+        width: '100%',
+      },
     },
     annemarie: {
 
     },
     annemarieImg: {
-      width: '100%',
-      height: '100%',
+      backgroundImage: `url(${annemarieImg})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      width: '50%',
+      '@media (max-width: 649px)': { // large mobile
+        height: 200,
+        width: '100%',
+      },
     },
   },
 }

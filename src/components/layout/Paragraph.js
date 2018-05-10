@@ -11,10 +11,10 @@ function Paragraph(props) {
 
 const styles = {
   paragraph: {
-    color: '#3d3d3d',
+    color: '#eee',
     fontSize: '1.25em',
     fontFamily: 'Lato-Light',
-    margin: '2em 0 0 0',
+    margin: '1em 0 0 0',
     '@media (max-width: 480px)': { // mobile
       fontSize: '1.125em',
     },
