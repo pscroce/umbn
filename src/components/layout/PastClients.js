@@ -1,10 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
-import Section from '../layout/Section';
-import SectionLeft from '../layout/SectionLeft';
-import Subtitle from '../layout/Subtitle';
-import Title from '../layout/Title';
+import Section from '../layout/elements/Section';
+import SectionLeft from '../layout/elements/SectionLeft';
+import Subtitle from '../layout/elements/Subtitle';
+import Title from '../layout/elements/Title';
 
 
 function PastClients() {

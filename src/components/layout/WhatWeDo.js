@@ -1,9 +1,9 @@
 import React from 'react';
 import Radium from 'radium';
 
-import Section from '../layout/Section';
-import Subtitle from '../layout/Subtitle';
-import Paragraph from '../layout/Paragraph';
+import Section from '../layout/elements/Section';
+import Subtitle from '../layout/elements/Subtitle';
+import Paragraph from '../layout/elements/Paragraph';
 
 import legoImg from '../../imgs/lego.jpg';
 

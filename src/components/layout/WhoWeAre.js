@@ -1,10 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
-import Section from '../layout/Section';
-import Subtitle from '../layout/Subtitle';
-import Paragraph from '../layout/Paragraph';
-import Label from '../layout/Label';
+import Section from '../layout/elements/Section';
+import Subtitle from '../layout/elements/Subtitle';
+import Paragraph from '../layout/elements/Paragraph';
+import Label from '../layout/elements/Label';
 
 import annemarieImg from '../../imgs/annemarie.jpg';
 import peterImg from '../../imgs/peter.jpg';
