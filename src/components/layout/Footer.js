@@ -44,6 +44,7 @@ const styles = {
       alignItems: 'center',
       justifyContent: 'space-around',
       height: '100%',
+      textAlign: 'center',
     },
   },
   instagramIcon: {

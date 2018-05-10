@@ -68,10 +68,10 @@ const styles = {
     // clipPath: 'polygon(100% 0, 100% 80%, 0 100%, 0 20%)',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
     minHeight: '100vh',
-    '@media (max-width: 557px)': { // mobile medium
-      backgroundPosition: 'top',
+    '@media (max-width: 992px)': { // mobile medium
+      backgroundPosition: '0% 20%',
     },
   },
   background: {
@@ -92,7 +92,15 @@ const styles = {
     width: '100%',
   },
   divider: {
-    background: '#65a3d6',
+    minHeight: 600,
+    background: 'rgb(101, 163, 214)',
+    clipPath: 'polygon(100% 0%, 100% 54%, 71% 75%, 30% 79%, 0 100%, 0 0)',
+    // position: 'relative',
+    // top: -50,
+    '@media (max-width: 992)': { // tablet
+      clipPath: 'polygon(100% 0%, 100% 54%, 71% 75%, 30% 79%, 0 100%, 0 0)',
+      top: 0,
+    },
   },
 
 }
