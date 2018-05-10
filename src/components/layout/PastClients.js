@@ -6,22 +6,30 @@ import SectionLeft from '../layout/elements/SectionLeft';
 import Subtitle from '../layout/elements/Subtitle';
 import Title from '../layout/elements/Title';
 
+import bloominBrandsLogo from '../../imgs/logos/bloomin-brands-logo.png';
+import fisLogo from '../../imgs/logos/FIS-logo.png';
+import theDaliLogo from '../../imgs/logos/the-dali-logo.png';
+import csdaLogo from '../../imgs/logos/csda-logo.png';
+
+
 
 function PastClients() {
   return (
     <div style={styles.pastClients}>
       <Section>
-        <SectionLeft>
           <Title>
             We've done it for them. We can do it for you.
           </Title>
-        </SectionLeft>
       </Section>
-      {/* <div style={styles.logoList}>
-        <img src={bloominBrandsLogo} alt=""/>
-        <img src={fisLogo} alt=""/>
-        <img src={theDaliLogo} alt=""/>
-      </div> */}
+      <Section>
+        <div style={styles.logoList}>
+          <img style={styles.logoList.logoListItem} src={bloominBrandsLogo} alt="Bloomin' Brands Logo"/>
+          <img style={styles.logoList.logoListItem} src={fisLogo} alt="FIS Logo"/>
+          <img style={styles.logoList.logoListItem} src={theDaliLogo} alt="The Dali Museum Logo"/>
+          <img style={styles.logoList.logoListItem} src={csdaLogo} alt="CSDA Logo"/>
+
+        </div>
+      </Section>
     </div>
   )
 }
@@ -36,11 +44,41 @@ const backgroundColor = '#eee';
 const styles = {
   pastClients: {
     display: 'flex',
-    alignItems: 'center',
     minHeight: 500,
+    alignItems: 'center',
     background: primary,
     clipPath: 'polygon(100% 0, 100% 50%, 61% 75%, 27% 80%, 0 100%, 0 0)',
+    '@media (max-width: 992px)': { // mobile medium
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+    },
   },
+  logoList: {
+    width: '100%',
+    minHeight: 300,
+    position: 'relative',
+    top: -80,
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    '@media (max-width: 992px)': { // mobile medium
+      top: 0,
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+      minHeight: 150,
+    },
+    '@media (max-width: 480px)': { // mobile
+
+    },
+    logoListItem: {
+      width: '25%',
+      margin: '0 12.5%',
+      '@media (max-width: 992px)': { // mobile medium
+        margin: '0 12.5% 0 0',
+      },
+    }
+  }
 }
 
 export default Radium(PastClients);
