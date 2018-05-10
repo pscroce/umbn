@@ -11,7 +11,7 @@ function SectionLeft(props) {
 
 const styles = {
   section: {
-    width: '50%',
+    width: '55%',
     '@media (max-width: 992px)': { // tablet
       width: '75%',
     },

@@ -10,7 +10,6 @@ import Title from '../layout/Title';
 function PastClients() {
   return (
     <div style={styles.pastClients}>
-      <br/>
       <Section>
         <SectionLeft>
           <Title>
@@ -36,6 +35,8 @@ const backgroundColor = '#eee';
 
 const styles = {
   pastClients: {
+    display: 'flex',
+    alignItems: 'center',
     minHeight: 500,
     background: primary,
     clipPath: 'polygon(100% 0, 100% 50%, 61% 75%, 27% 80%, 0 100%, 0 0)',

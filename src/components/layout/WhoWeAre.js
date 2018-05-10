@@ -7,11 +7,13 @@ import Paragraph from '../layout/Paragraph';
 import Label from '../layout/Label';
 
 import annemarieImg from '../../imgs/annemarie.jpg';
+import peterImg from '../../imgs/peter.jpg';
 
 function WhoWeAre() {
   return (
     <Section>
       <div style={styles.whoWeAre}>
+
         <div style={styles.whoWeAre.aboutAnnemarie}>
           <Subtitle>
             Annemarie Boss
@@ -20,16 +22,30 @@ function WhoWeAre() {
             Lead Facilitator
           </Label>
           <Paragraph>
-            Working with teams and an endless supply of post-it notes is Annemarie's forte. Through a diverse set of techniques for any occasion, she runs effective group sessions that result in actionable next steps.
+            Working with teams and an endless supply of post-it notes is Annemarie's forte. Through a diverse set of techniques for any occasion, she designs and runs effective group sessions that result in actionable next steps using methods such as Human Centered Design sprints, Osborn-Parnes Creative Problem Solving, LEGO® Serious Play®, the FourSight® Creative Thinking System, and Improv training.
           </Paragraph>
         </div>
 
-          <div style={styles.whoWeAre.annemarieImg}></div>
-          {/* <img
-            style={styles.whoWeAre.annemarieImg}
-            src={annemarieImg}
-            alt="Annemarie Boss facilitating a group of people building with LEGO."/> */}
-        <div style={styles.whoWeAre.annemarie}></div>
+        <div style={styles.whoWeAre.annemarieImg}></div>
+
+      </div>
+
+      <div style={styles.whoWeAre}>
+
+        <div style={styles.whoWeAre.peterImg}></div>
+
+        <div style={styles.whoWeAre.aboutPeter}>
+          <Subtitle>
+            Peter Croce
+          </Subtitle>
+          <Label>
+            Product Consultant & Facilitator
+          </Label>
+          <Paragraph>
+            A people-oriented product manager and former front-end developer (React, node, others), Peter is driven to use the internet to get people off the internet. Through facilitation and follow up, he guides teams through painful ambiguity to the promised land of functional prototypes, agile iterations, and ultimately to products that create value consistently over time, at the right pace, and with the right side effects.
+          </Paragraph>
+        </div>
+
       </div>
     </Section>
   )
@@ -56,11 +72,27 @@ const styles = {
         width: '100%',
       },
     },
-    annemarie: {
-
-    },
     annemarieImg: {
       backgroundImage: `url(${annemarieImg})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      width: '50%',
+      '@media (max-width: 649px)': { // large mobile
+        height: 200,
+        width: '100%',
+      },
+    },
+    aboutPeter: {
+      width: '50%',
+      backgroundColor: lightGray,
+      padding: 30,
+      '@media (max-width: 649px)': { // large mobile
+        width: '100%',
+      },
+    },
+    peterImg: {
+      backgroundImage: `url(${peterImg})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
       backgroundSize: 'cover',

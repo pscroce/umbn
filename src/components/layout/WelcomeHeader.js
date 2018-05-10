@@ -14,14 +14,14 @@ function WelcomeHeader() {
       <div style={styles.welcomeHeader}>
       <Section>
         <SectionLeft>
-          <Title style={styles.title}>
+          <Title>
             Transform Meetings
           </Title>
 
           <Subtitle>
             We know play is key to productive and creative business. And we know how to get there.
           </Subtitle>
-
+          <br/>
         </SectionLeft>
       </Section>
       </div>
