@@ -4,6 +4,7 @@
   "homepage": "http://focus.pcroce.com",
   "private": true,
   "dependencies": {
+    "airtable": "^0.5.4",
     "axios": "^0.17.0",
     "littlefoot": "^1.0.0",
     "lodash": "^4.17.4",
