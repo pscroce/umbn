@@ -33,7 +33,7 @@ function PastClients() {
 }
 
 // Colors
-const primary = '#65a3d6';
+// const primary = '#65a3d6';
 // const secondary = '#004787';
 // const darkGray = '#1c1c1c';
 // const lightGray = '#bcbcbc';
