@@ -52,11 +52,12 @@ function WhoWeAre() {
 }
 
 // Colors
-const primary = '#65a3d6';
+// const primary = '#65a3d6';
 const secondary = '#004787';
-const darkGray = '#1c1c1c';
-const lightGray = '#bcbcbc';
-const backgroundColor = '#eee';
+// const darkGray = '#1c1c1c';
+// const midGray = '#777777';
+// const lightGray = '#bcbcbc';
+// const backgroundColor = '#eee';
 
 const styles = {
   whoWeAre: {
@@ -66,7 +67,7 @@ const styles = {
     },
     aboutAnnemarie: {
       width: '50%',
-      backgroundColor: lightGray,
+      backgroundColor: secondary,
       padding: 30,
       '@media (max-width: 649px)': { // large mobile
         width: '100%',
@@ -85,7 +86,7 @@ const styles = {
     },
     aboutPeter: {
       width: '50%',
-      backgroundColor: lightGray,
+      backgroundColor: secondary,
       padding: 30,
       '@media (max-width: 649px)': { // large mobile
         width: '100%',

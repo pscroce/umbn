@@ -25,15 +25,15 @@ function Home() {
 }
 
 // Colors
-const primary = '#65a3d6';
-const secondary = '#004787';
-const darkGray = '#1c1c1c';
-const lightGray = '#bcbcbc';
-const backgroundColor = '#eee';
-
-const styles = {
-
-
-}
+// const primary = '#65a3d6';
+// const secondary = '#004787';
+// const darkGray = '#1c1c1c';
+// const lightGray = '#bcbcbc';
+// const backgroundColor = '#eee';
+//
+// const styles = {
+//
+//
+// }
 
 export default Radium(Home);

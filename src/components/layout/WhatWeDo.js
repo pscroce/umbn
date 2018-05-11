@@ -2,8 +2,6 @@ import React from 'react';
 import Radium from 'radium';
 
 import Section from '../layout/elements/Section';
-import Subtitle from '../layout/elements/Subtitle';
-import Paragraph from '../layout/elements/Paragraph';
 
 import legoImg from '../../imgs/lego.jpg';
 
@@ -23,11 +21,11 @@ function WhatWeDo() {
 }
 
 // Colors
-const primary = '#65a3d6';
-const secondary = '#004787';
-const darkGray = '#1c1c1c';
-const lightGray = '#bcbcbc';
-const backgroundColor = '#eee';
+// const primary = '#65a3d6';
+// const secondary = '#004787';
+// const darkGray = '#1c1c1c';
+// const lightGray = '#bcbcbc';
+// const backgroundColor = '#eee';
 
 const styles = {
   showOffLego: {

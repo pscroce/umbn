@@ -1,10 +1,11 @@
 import React from 'react';
 import Radium from 'radium';
-import { NavLink as ReactRouterNavLink } from 'react-router-dom';
+// import { NavLink as ReactRouterNavLink } from 'react-router-dom';
 import '../../index.css';
 import wordmark from '../../imgs/umbn-wordmark.png';
 
-const NavLink = Radium(ReactRouterNavLink); // this isn't working: https://github.com/FormidableLabs/radium/issues/398
+// const NavLink = Radium(ReactRouterNavLink);
+// this isn't working: https://github.com/FormidableLabs/radium/issues/398
 
 function Navigation() {
   return (

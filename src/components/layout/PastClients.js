@@ -2,9 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 
 import Section from '../layout/elements/Section';
-import SectionLeft from '../layout/elements/SectionLeft';
 import Subtitle from '../layout/elements/Subtitle';
-import Title from '../layout/elements/Title';
 
 import bloominBrandsLogo from '../../imgs/logos/bloomin-brands-logo.png';
 import fisLogo from '../../imgs/logos/FIS-logo.png';
@@ -17,9 +15,9 @@ function PastClients() {
   return (
     <div style={styles.pastClients}>
       <Section>
-          <Title>
+          <Subtitle>
             We've done it for them. We can do it for you.
-          </Title>
+          </Subtitle>
       </Section>
       <Section>
         <div style={styles.logoList}>
@@ -36,17 +34,17 @@ function PastClients() {
 
 // Colors
 const primary = '#65a3d6';
-const secondary = '#004787';
-const darkGray = '#1c1c1c';
-const lightGray = '#bcbcbc';
-const backgroundColor = '#eee';
+// const secondary = '#004787';
+// const darkGray = '#1c1c1c';
+// const lightGray = '#bcbcbc';
+// const backgroundColor = '#eee';
 
 const styles = {
   pastClients: {
     display: 'flex',
     minHeight: 500,
     alignItems: 'center',
-    background: primary,
+    background: 'linear-gradient(180deg, rgba(101,163,214,1) 0%, rgba(0,71,135,1) 100%)',
     clipPath: 'polygon(100% 0, 100% 50%, 61% 75%, 27% 80%, 0 100%, 0 0)',
     '@media (max-width: 992px)': { // mobile medium
       flexDirection: 'column',

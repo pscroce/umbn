@@ -30,11 +30,11 @@ function WelcomeHeader() {
 }
 
 // Colors
-const primary = '#65a3d6';
-const secondary = '#004787';
-const darkGray = '#1c1c1c';
-const lightGray = '#bcbcbc';
-const backgroundColor = '#eee';
+// const primary = '#65a3d6';
+// const secondary = '#004787';
+// const darkGray = '#1c1c1c';
+// const lightGray = '#bcbcbc';
+// const backgroundColor = '#eee';
 
 const styles = {
   welcomeHeader: {
@@ -50,13 +50,14 @@ const styles = {
       backgroundPosition: '0% 10%',
     },
     '@media (max-width: 480px)': { // mobile
-      backgroundPosition: '0% 20%',
+      backgroundPosition: '0% 5%',
+      paddingBottom: 50,
     },
   },
   background: {
     backgroundSize: '100%',
     minHeight: '100vh',
-    background: 'linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(101,163,214,1) 100%)',
+    background: 'linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(101,163,214,1) 75%)',
   },
 }
 
