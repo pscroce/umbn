@@ -6,7 +6,7 @@ import Section from '../layout/elements/Section';
 function Footer() {
   return (
     <Section>
-      <div style={styles.footer}>
+      <div style={styles.footer} className="footer">
         <div style={styles.footerText}>
           <span>UMBN Human-Centered Design Collaborative</span>
           <span>
@@ -52,8 +52,8 @@ const styles = {
     },
   },
   instagramIcon: {
-    color: '#3d3d3d',
     padding: 10,
+    paddingBottom: 5,
   }
 }
 

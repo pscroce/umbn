@@ -12,12 +12,21 @@ import peterImg from '../../imgs/peter.jpg';
 function WhoWeAre() {
   return (
     <Section>
-      <div style={styles.whoWeAre}>
+      <div style={styles.teamMemberCard}>
 
-        <div style={styles.whoWeAre.aboutAnnemarie}>
-          <Subtitle>
-            Annemarie Boss
-          </Subtitle>
+        <div style={styles.aboutAnnemarie}>
+          <div style={styles.teamMemberName}>
+            <Subtitle>
+              Annemarie Boss
+            </Subtitle>
+            <a href="https://linkedin.com/in/annemarieboss1"
+              style={styles.linkedinIcon}
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
           <Label>
             Lead Facilitator
           </Label>
@@ -26,18 +35,27 @@ function WhoWeAre() {
           </Paragraph>
         </div>
 
-        <div style={styles.whoWeAre.annemarieImg}></div>
+        <div style={styles.annemarieImg}></div>
 
       </div>
 
-      <div style={styles.whoWeAre}>
+      <div style={styles.teamMemberCard}>
 
-        <div style={styles.whoWeAre.peterImg}></div>
+        <div style={styles.peterImg}></div>
 
-        <div style={styles.whoWeAre.aboutPeter}>
-          <Subtitle>
-            Peter Croce
-          </Subtitle>
+        <div style={styles.aboutPeter}>
+          <div style={styles.teamMemberName}>
+            <Subtitle>
+              Peter Croce
+            </Subtitle>
+            <a href="https://linkedin.com/in/pscroce"
+              style={styles.linkedinIcon}
+              className="icon"
+              target="_blank"
+              rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
           <Label>
             Product Lead & Facilitator
           </Label>
@@ -60,50 +78,61 @@ const secondary = '#004787';
 // const backgroundColor = '#eee';
 
 const styles = {
-  whoWeAre: {
+  teamMemberCard: {
     display: 'flex',
     '@media (max-width: 649px)': { // large mobile
       flexDirection: 'column',
     },
-    aboutAnnemarie: {
-      width: '50%',
-      backgroundColor: secondary,
-      padding: 30,
-      '@media (max-width: 649px)': { // large mobile
-        width: '100%',
-      },
-    },
-    annemarieImg: {
-      backgroundImage: `url(${annemarieImg})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      width: '50%',
-      '@media (max-width: 649px)': { // large mobile
-        height: 200,
-        width: '100%',
-      },
-    },
-    aboutPeter: {
-      width: '50%',
-      backgroundColor: secondary,
-      padding: 30,
-      '@media (max-width: 649px)': { // large mobile
-        width: '100%',
-      },
-    },
-    peterImg: {
-      backgroundImage: `url(${peterImg})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      width: '50%',
-      '@media (max-width: 649px)': { // large mobile
-        height: 200,
-        width: '100%',
-      },
+  },
+  teamMemberName: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  aboutAnnemarie: {
+    width: '50%',
+    backgroundColor: secondary,
+    padding: 30,
+    '@media (max-width: 649px)': { // large mobile
+      width: '100%',
+      padding: 15,
     },
   },
+  annemarieImg: {
+    backgroundImage: `url(${annemarieImg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    width: '50%',
+    '@media (max-width: 649px)': { // large mobile
+      height: 200,
+      width: '100%',
+    },
+  },
+  aboutPeter: {
+    width: '50%',
+    backgroundColor: secondary,
+    padding: 30,
+    '@media (max-width: 649px)': { // large mobile
+      width: '100%',
+    },
+  },
+  peterImg: {
+    backgroundImage: `url(${peterImg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    width: '50%',
+    '@media (max-width: 649px)': { // large mobile
+      height: 200,
+      width: '100%',
+    },
+  },
+  linkedinIcon: {
+    padding: 10,
+    paddingBottom: 5,
+    height: 44,
+    alignItem: 'flex-end',
+  }
 }
 
 export default Radium(WhoWeAre);

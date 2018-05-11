@@ -51,7 +51,7 @@ const styles = {
     },
     '@media (max-width: 480px)': { // mobile
       backgroundPosition: '0% 5%',
-      paddingBottom: 50,
+      paddingBottom: 70,
     },
   },
   background: {

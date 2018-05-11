@@ -15,6 +15,7 @@ const styles = {
     fontSize: '1.25em',
     fontFamily: 'Lato-Light',
     margin: 0,
+    marginBottom: 30,
     '@media (max-width: 480px)': { // mobile
       fontSize: '1.125em',
     },

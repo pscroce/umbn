@@ -17,6 +17,7 @@ const styles = {
     margin: '1em 0 0 0',
     '@media (max-width: 480px)': { // mobile
       fontSize: '1.125em',
+      margin: 0,
     },
   },
 }

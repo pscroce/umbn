@@ -1,3 +1,12 @@
+/*
+UMBN Brand Colors
+Primary #65a3d6
+Secondary #004787
+Dark Accent #1c1c1c
+Mid Accent #777777
+Light Accent #bcbcbc
+*/
+
 body {
   margin: 0;
   padding: 0;
@@ -13,23 +22,45 @@ p {
     font-size: 1.125em;
   }
 }
-.eye-link h3 {
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
+
+a, a:visited {
+  color: #eee;
+  fill: #eee;
+  background-image: linear-gradient(180deg,transparent 65%,rgba(101, 163, 214, 0.5) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(101, 163, 214, 0.5);
+  transition: all 0.3s ease-in-out;
 }
-.eye-link:hover h3,
-.eye-link:active h3  {
-  opacity: 1;
+a:hover, a:active {
+  background-image: linear-gradient(180deg,transparent 65%,rgba(101, 163, 214, 0.5) 0);
+  background-size: 100% 100%;
 }
-.eye-link h3:hover,
-.eye-link h3:active {
-  opacity: 1;
+
+.footer a, .footer a:visited {
+  color: #3d3d3d;
+  fill: #3d3d3d;
+  border-bottom: 1px solid rgba(101, 163, 214, 0.5);
+
 }
-@media (max-width: 480px) {
-  .eye-link h3 {
-    opacity: 1;
-  }
+/* .footer a {
+  color: #aaa;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(150deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
 }
+.footer a:hover {
+  fill: #65a3d6;
+  background-size: 100% 100%;
+}
+.footer a:active {
+  color: #65a3d6;
+  cursor: default;
+  background-image: linear-gradient(150deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
+} */
+
+
 @font-face {
   font-family: 'Lato-Medium';
   src: local('Lato-Medium'), url(./fonts/Lato-Medium.ttf) format('opentype');
@@ -38,76 +69,3 @@ p {
   font-family: 'Lato-Light';
   src: local('Lato-Light'), url(./fonts/Lato-Light.ttf) format('opentype');
 }
-/* Posts */
-.blog-post-text-area {
-  color: #3d3d3d;
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: 50px;
-}
-@media (max-width: 992px) {
-  .blog-post-text-area {
-    margin-right: 0;
-  }
-}
-.blog-post-text-area p {
-  font-family: 'Lato-Light', sans-serif;
-  line-height: 1.75;
-}
-/* Posts */
-a {
-  color: #3d3d3d;
-  transition: all 0.3s ease-in-out;
-
-  background-image: linear-gradient(150deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-}
-a:hover {
-  color: #65a3d6;
-  background-size: 100% 100%;
-}
-a:active {
-  color: #65a3d6;
-  cursor: default;
-  background-image: linear-gradient(150deg,transparent 60%,rgba(188, 188, 188, 0.5) 0);
-  background-size: 100% 100%;
-}
-
-.mc-banner {
-  display: none !important;
-}
-@media only screen and (max-width: 768px) {
-  .mc-modal, .mc-modal-bg {
-    visibility: visible !important;
-  }
-}
-
-/*
-Brand colors
-
-Primary
-hex: #65a3d6
-rgb: 101, 163, 214
-cmyk: 59, 25, 1, 0
-
-Secondary
-hex: #004787
-rgb: 0, 71, 135
-cmyk: 100, 81, 20, 5
-
-Dark Accent
-hex: #1c1c1c
-rgb: 28, 28, 28
-cmyk: 72, 66, 65, 77
-
-Mid Accent
-hex: #777777
-rgb: 119, 119, 119
-cmyk: 55, 46, 46, 11
-
-Light Accent
-hex: #bcbcbc
-rgb: 188, 188, 188
-cmyk: 27, 21, 21, 0
-*/
