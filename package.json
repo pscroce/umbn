@@ -7,7 +7,7 @@
     "axios": "^0.17.0",
     "littlefoot": "^1.0.0",
     "lodash": "^4.17.4",
-    "radium": "^0.19.6",
+    "radium": "^0.23.0",
     "react": "^16.0.0",
     "react-detect-offline": "^1.0.5",
     "react-dom": "^16.0.0",
