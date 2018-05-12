@@ -13,7 +13,7 @@ const styles = {
   label: {
     color: '#eee',
     fontSize: '1.25em',
-    fontFamily: 'Lato-Light',
+    fontFamily: 'Aleo-Light',
     margin: 0,
     marginBottom: 30,
     '@media (max-width: 480px)': { // mobile

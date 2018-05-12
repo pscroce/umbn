@@ -63,9 +63,13 @@ a:hover, a:active {
 
 @font-face {
   font-family: 'Lato-Medium';
-  src: local('Lato-Medium'), url(./fonts/Lato-Medium.ttf) format('opentype');
+  src: local('Lato-Medium'), url(./fonts/Lato-Medium.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato-Light';
-  src: local('Lato-Light'), url(./fonts/Lato-Light.ttf) format('opentype');
+  src: local('Lato-Light'), url(./fonts/Lato-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Aleo-Light';
+  src: local('Aleo-Light'), url(./fonts/Aleo-Light.otf) format('opentype');
 }

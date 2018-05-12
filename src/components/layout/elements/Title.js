@@ -11,7 +11,7 @@ const styles = {
   title: {
     color: '#eee',
     fontSize: '4em',
-    fontFamily: 'Lato-Medium',
+    fontFamily: 'Aleo-Light',
     display: 'block',
     // '@media (max-width: 1197px)': { // smaller laptops
     //   fontSize: '9em',
