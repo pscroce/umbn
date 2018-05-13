@@ -37,7 +37,8 @@ class App extends Component {
 
 const styles = {
   app: {
-    backgroundColor: '#eee',
+    backgroundImage: 'linear-gradient(180deg, rgba(101,163,214,1) 0%, rgba(238,238,238,1) 75%)',
+
     minHeight: '100vh',
     width: '100%',
     overflow: 'hidden',

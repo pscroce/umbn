@@ -12,12 +12,12 @@ function Label(props) {
 const styles = {
   label: {
     color: '#eee',
-    fontSize: '1.25em',
+    fontSize: '1.25rem',
     fontFamily: 'Aleo-Light',
     margin: 0,
     marginBottom: 30,
     '@media (max-width: 480px)': { // mobile
-      fontSize: '1.125em',
+      fontSize: '1.125rem',
     },
   },
 }

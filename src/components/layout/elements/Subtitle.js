@@ -10,18 +10,19 @@ function Subtitle(props) {
 const styles = {
   subtitle: {
     color: '#eee',
-    fontSize: '2em',
+    fontSize: '2rem',
     fontFamily: 'Aleo-Light',
     lineHeight: 1.2,
     display: 'block',
+
     // '@media (max-width: 1197px)': { // smaller laptops
     //   fontSize: '9em',
     // },
     '@media (max-width: 992px)': { // tablet
-      fontSize: '1.5em',
+      fontSize: '1.5rem',
     },
     '@media (max-width: 649px)': { // large mobile
-      fontSize: '1.25em',
+      fontSize: '1.25rem',
     },
     // '@media (max-width: 557px)': { // medium mobile
     //   fontSize: '4em',

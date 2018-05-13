@@ -12,11 +12,11 @@ function Paragraph(props) {
 const styles = {
   paragraph: {
     color: '#eee',
-    fontSize: '1.25em',
+    fontSize: '1.25rem',
     fontFamily: 'Lato-Light',
     margin: '1em 0 0 0',
     '@media (max-width: 480px)': { // mobile
-      fontSize: '1.125em',
+      fontSize: '1.125rem',
       margin: 0,
     },
   },

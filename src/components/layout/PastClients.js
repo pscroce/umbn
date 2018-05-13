@@ -19,15 +19,6 @@ import theSpringLogo from '../../imgs/logos/spring-logo.png';
 import bomgarLogo from '../../imgs/logos/bomgar-logo.png';
 
 
-
-
-
-
-
-
-
-
-
 function PastClients() {
   return (
     <div style={styles.pastClients}>
@@ -78,12 +69,9 @@ function PastClients() {
             <img style={styles.logoList.logoListImg} src={bomgarLogo} alt="Bomgar Logo"/>
           </div>
 
-
-
-
-
         </div>
       </Section>
+
     </div>
   )
 }
@@ -104,6 +92,7 @@ const styles = {
     flexDirection: 'column',
     minHeight: 800,
     paddingTop: 40,
+    marginBottom: 50,
     '@media (max-width: 992px)': { // tablet
       alignItems: 'flex-start',
       minHeight: 1200,

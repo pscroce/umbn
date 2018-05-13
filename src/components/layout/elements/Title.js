@@ -10,17 +10,18 @@ function Title(props) {
 const styles = {
   title: {
     color: '#eee',
-    fontSize: '4em',
+    fontSize: '4rem',
     fontFamily: 'Aleo-Light',
     display: 'block',
+
     // '@media (max-width: 1197px)': { // smaller laptops
     //   fontSize: '9em',
     // },
     '@media (max-width: 992px)': { // tablet
-      fontSize: '2.5em',
+      fontSize: '2.5rem',
     },
     '@media (max-width: 649px)': { // large mobile
-      fontSize: '1.75em',
+      fontSize: '1.75rem',
     },
     // '@media (max-width: 557px)': { // medium mobile
     //   fontSize: '4em',
