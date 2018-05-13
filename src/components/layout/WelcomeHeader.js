@@ -46,6 +46,7 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'flex-end',
     minHeight: '100vh',
+    paddingBottom: 40,
     '@media (max-width: 992px)': { // mobile medium
       backgroundPosition: '0% 10%',
     },
