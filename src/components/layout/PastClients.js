@@ -3,6 +3,7 @@ import Radium from 'radium';
 
 import Section from '../layout/elements/Section';
 import Subtitle from '../layout/elements/Subtitle';
+import Paragraph from '../layout/elements/Paragraph';
 
 import bloominBrandsLogo from '../../imgs/logos/bloomin-brands-logo.png';
 import fisLogo from '../../imgs/logos/fis-logo.png';
@@ -23,9 +24,16 @@ function PastClients() {
   return (
     <div style={styles.pastClients}>
       <Section>
-          <Subtitle>
-            We've done it for them. We can do it for you.
-          </Subtitle>
+        <Subtitle>
+          We've done it for them. We can do it for you.
+        </Subtitle>
+        {/* <Paragraph>
+          We design meetings that result in clarity, creativity, and action. We
+          help teams develop solutions to challenges by involving the human
+          perspective in all steps of the problem solving process. The need for
+          better meetings and process is universal, as is the creative human
+          ability to rise to any challenge.
+        </Paragraph> */}
       </Section>
       <Section>
         <div style={styles.logoList}>

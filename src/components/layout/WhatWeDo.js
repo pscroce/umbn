@@ -10,6 +10,8 @@ import Label from '../layout/elements/Label';
 
 import legoImg from '../../imgs/lego.jpg';
 import cpsImg from '../../imgs/cps.jpg';
+import hcdSprint from '../../imgs/hcd-sprint.jpg';
+import businessImprov from '../../imgs/business-improv.jpg';
 
 
 function WhatWeDo() {
@@ -22,6 +24,59 @@ function WhatWeDo() {
           </Title>
         </Section>
       </div>
+
+      <Section>
+
+        <Card>
+
+          <div style={styles.whatWeDoText}>
+            <Subtitle>
+              Human Centered Design Sprint
+            </Subtitle>
+
+            <Paragraph>
+              We design meetings that result in clarity, creativity, and action.
+              Our approach helps teams design winning
+              products, services, and experiences by involving the human
+              perspective in all steps of the problem solving process.
+              The need for
+              better meetings and process is universal, as is the creative human
+              ability to rise to any challenge.
+            </Paragraph>
+          </div>
+          <div style={[styles.whatWeDoImg, styles.hcdSprint]}></div>
+        </Card>
+
+
+      </Section>
+
+      <Section>
+
+        <Card>
+          <div style={[styles.whatWeDoImg, styles.legoImg]}></div>
+
+          <div style={styles.whatWeDoText}>
+            <Subtitle>LEGO Serious Play</Subtitle>
+            <Paragraph>
+            “You can learn more about a person in an hour of play than you can
+            from a lifetime of conversation” - Plato
+            </Paragraph>
+            <Paragraph>
+              The LEGO® SERIOUS PLAY® methodology is designed to enhance
+              innovation and business performance. This strategy produces a more
+              meaningful understanding of the world and its possibilities.
+            </Paragraph>
+            <Paragraph>
+              We love employing this “hands on, minds on” methodology
+              to create a more reflective atmosphere and engage participants in
+              deeper, more effective dialogue.
+            </Paragraph>
+          </div>
+
+        </Card>
+
+      </Section>
+
       <Section>
 
         <Card>
@@ -55,23 +110,17 @@ function WhatWeDo() {
       <Section>
 
         <Card>
-          <div style={[styles.whatWeDoImg, styles.legoImg]}></div>
+          <div style={[styles.whatWeDoImg, styles.businessImprov]}></div>
 
           <div style={styles.whatWeDoText}>
-            <Subtitle>LEGO Serious Play</Subtitle>
+            <Subtitle>Business Improv</Subtitle>
             <Paragraph>
-            “You can learn more about a person in an hour of play than you can
-            from a lifetime of conversation” - Plato
-            </Paragraph>
-            <Paragraph>
-              The LEGO® SERIOUS PLAY® methodology is designed to enhance
-              innovation and business performance. This strategy produces a more
-              meaningful understanding of the world and its possibilities.
-            </Paragraph>
-            <Paragraph>
-              At UMBN we love employing this “hands on, minds on” methodology
-              to create a more reflective atmosphere and engage participants in
-              deeper, more effective dialogue.
+              In today’s ever changing world, mental agility is essential. At UMBN,
+              we customize Improvisational tools and skill sets to help teams
+              embrace uncertainty, learn to view change as opportunity, and value
+              collaboration with their team. Through fun, high-energy Improv
+              workshops, teams become more cohesive, adaptable and open-
+              minded to the “Yes, and” approach to life and business.
             </Paragraph>
           </div>
 
@@ -139,6 +188,12 @@ const styles = {
   },
   legoImg: {
     backgroundImage: `url(${legoImg})`,
+  },
+  hcdSprint: {
+    backgroundImage: `url(${hcdSprint})`,
+  },
+  businessImprov: {
+    backgroundImage: `url(${businessImprov})`,
   },
 }
 
