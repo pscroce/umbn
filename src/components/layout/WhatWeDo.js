@@ -36,7 +36,7 @@ function WhatWeDo() {
 
             <Paragraph>
               We design meetings that result in clarity, creativity, and action.
-              Our approach helps teams design winning
+              Our signature approach helps teams design winning
               products, services, and experiences by involving the human
               perspective in all steps of the problem solving process.
               The need for
@@ -56,13 +56,13 @@ function WhatWeDo() {
           <div style={[styles.whatWeDoImg, styles.legoImg]}></div>
 
           <div style={styles.whatWeDoText}>
-            <Subtitle>LEGO Serious Play</Subtitle>
+            <Subtitle>LEGO<sup>®</sup> Serious Play</Subtitle>
             <Paragraph>
             “You can learn more about a person in an hour of play than you can
             from a lifetime of conversation” - Plato
             </Paragraph>
             <Paragraph>
-              The LEGO® SERIOUS PLAY® methodology is designed to enhance
+              The LEGO<sup>®</sup> Serious Play methodology is designed to enhance
               innovation and business performance. This strategy produces a more
               meaningful understanding of the world and its possibilities.
             </Paragraph>
@@ -149,7 +149,8 @@ const styles = {
     flexDirection: 'column',
     minHeight: 200,
     paddingTop: 40,
-    padding: 30,
+    paddingLeft: 30,
+
     '@media (max-width: 992px)': { // tablet
       alignItems: 'flex-start',
       minHeight: 170,
@@ -158,7 +159,8 @@ const styles = {
     },
     '@media (max-width: 649px)': { // mobile medium
       minHeight: 130,
-      padding: 15,
+      paddingLeft: 15,
+
     },
     '@media (max-width: 480px)': { // mobile
       minHeight: 100,
@@ -195,6 +197,9 @@ const styles = {
   businessImprov: {
     backgroundImage: `url(${businessImprov})`,
   },
+  superScript: {
+
+  }
 }
 
 export default Radium(WhatWeDo);
