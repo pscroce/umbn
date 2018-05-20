@@ -2,10 +2,12 @@ import React from 'react';
 import Radium from 'radium';
 
 import Section from '../layout/elements/Section';
+import EmailSignupForm from '../layout/elements/EmailSignupForm';
 
 function Footer() {
   return (
     <Section>
+      <EmailSignupForm></EmailSignupForm>
       <div style={styles.footer} className="footer">
         <div style={styles.footerText}>
           <span>UMBN Human-Centered Design Collaborative</span>
