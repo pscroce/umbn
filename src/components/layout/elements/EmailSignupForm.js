@@ -1,34 +1,12 @@
 import React, { Component } from 'react';
 import Radium from 'radium';
-import axios from 'axios';
 import Airtable from 'airtable';
 
+import Section from '../elements/Section';
+import Title from '../elements/Title';
+import Paragraph from '../elements/Paragraph';
+
 var base = new Airtable({apiKey: `${process.env.REACT_APP_AIRTABLE_API_KEY}`}).base('appGdT2hY3InLQ24J');
-
-// base('Website Email Subscribers').create({
-//   "Name": `${this.state.name}`,
-//   "Email": `${this.state.email}`,
-//   "Interested in...": {this.state.interestedIn}
-// }, function(err, record) {
-//     if (err) { console.error(err); return; }
-//     console.log(record.getId());
-// });
-
-// w/ interestedIn
-// state = { name: '',
-//           email: '',
-//           interestedIn: [] }
-// handleSubmit = (event) => {
-//   event.preventDefault();
-//   base('Website Email Subscribers').create({
-//     "Name": `${this.state.name}`,
-//     "Email": `${this.state.email}`,
-//     "Interested in...": {this.state.interestedIn}
-//   }, function(err, record) {
-//       if (err) { console.error(err); return; }
-//       console.log(record.getId());
-//   });
-// };
 
 class EmailSignupForm extends Component {
   constructor(props) {
@@ -36,13 +14,14 @@ class EmailSignupForm extends Component {
     this.state = {
       name: '',
       email: '',
-      wantsCasePacket: false,
-      wantsToolkit: false
+      wantsCasePacket: true,
+      wantsUpdates: false,
+      submitted: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
   }
-  handleInputChange(event) {
+  handleInputChange = (event) => {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
@@ -53,71 +32,95 @@ class EmailSignupForm extends Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
+    document.getElementById("buttonSubmitEmailForm").innerHTML = "Submiting...";
     base('Website Email Subscribers').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
       "Wants Case Packet?": `${this.state.wantsCasePacket}`,
-      "Wants Toolkit?": `${this.state.wantsToolkit}`
+      "Wants Updates?": `${this.state.wantsUpdates}`
     }, {typecast: true}, function(err, record) {
-        if (err) { console.error(err); return; }
-        console.log(record.getId());
+        if (err) {
+          console.error(err);
+          alert("Whoops, there was an error submitting your contact information. Please refresh the page and try again.");
+          return;
+        } else {
+          document.getElementById("buttonSubmitEmailForm").innerHTML = "Submitted!";
+        }
+        // console.log(record.getId());
+    });
+    this.setState({
+      submitted: true
     });
   };
   render() {
     return (
-      <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
-        <label htmlFor="Full name">
-          <input type="text"
-            style={[styles.input, styles.inputAndButton]}
-            value={this.state.name}
-            onChange={(event) => this.setState({ name: event.target.value })}
-            placeholder="Full name" required/>
-        </label>
-        <label htmlFor="Email">
-          <input type="email"
-            style={[styles.input, styles.inputAndButton]}
-            value={this.state.email}
-            onChange={(event) => this.setState({ email: event.target.value })}
-            placeholder="Email" required/>
-        </label>
-        <label>
-          Would you like to request the UMBN Case Packet?
-          <input
-            name="wantsCasePacket"
-            type="checkbox"
-            checked={this.state.wantsCasePacket}
-            onChange={this.handleInputChange} />
-        </label>
-        <label>
-          Would you like to request the UMBN Toolkit?
-          <input
-            name="wantsToolkit"
-            type="checkbox"
-            checked={this.state.wantsToolkit}
-            onChange={this.handleInputChange} />
-        </label>
-        <button type="submit"
-          style={[styles.button, styles.inputAndButton]}
-          >Submit</button>
-      </form>
+      <div style={styles.formText}>
+        <Title>Request Case Packet</Title>
+        <br/>
+        <br/>
+        <Paragraph>Want to request our case packet? Submit your contact information below and we'll reach out!</Paragraph>
+        <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
+          <label htmlFor="Full name">
+            <input type="text"
+              style={[styles.input, styles.inputAndButton]}
+              value={this.state.name}
+              onChange={(event) => this.setState({ name: event.target.value })}
+              placeholder="Full name" required/>
+          </label>
+          <label htmlFor="Email">
+            <input type="email"
+              style={[styles.input, styles.inputAndButton]}
+              value={this.state.email}
+              onChange={(event) => this.setState({ email: event.target.value })}
+              placeholder="Email" required/>
+          </label>
+          {/* <label>
+            Would you like to request the UMBN Case Packet?
+            <input
+              name="wantsCasePacket"
+              type="checkbox"
+              checked={this.state.wantsCasePacket}
+              onChange={this.handleInputChange} />
+          </label> */}
+          <label>
+            <Paragraph>Want updates? No spam.
+              <input
+                style={styles.checkbox}
+                name="wantsUpdates"
+                type="checkbox"
+                checked={this.state.wantsUpdates}
+                onChange={this.handleInputChange} />
+            </Paragraph>
+
+          </label>
+          <button type="submit" id="buttonSubmitEmailForm"
+            style={this.state.submitted === false ? [styles.buttonUnsubmitted, styles.button, styles.inputAndButton] : [styles.buttonSubmitted, styles.button, styles.inputAndButton]}
+            >Submit</button>
+        </form>
+      </div>
     );
   };
 }
 
+// Colors
+const primary = '#65a3d6';
+const secondary = '#004787';
+
+
 const styles = {
-  // emailSignupForm: {
-  //   margin: '3rem 0',
-  //   display: 'grid',
-  //   gridTemplateColumns: '1fr 1fr 1fr',
-  //   gridGap: '1rem',
-  //   '@media (max-width: 992px)': {
-  //     gridTemplateColumns: '1fr',
-  //     margin: 0,
-  //   }
-  // },
+  formText: {
+    backgroundColor: secondary,
+    padding: 30,
+    '@media (max-width: 649px)': { // large mobile
+      width: '100%',
+      padding: 15,
+    },
+  },
   emailSignupForm: {
     margin: '3rem 0',
     display: 'flex',
+    flexDirection: 'column',
+
     '@media (max-width: 992px)': {
       margin: 0,
       flexDirection: 'column',
@@ -133,23 +136,39 @@ const styles = {
   input: {
     borderRadius: 3,
     border: '1px solid #222',
-    backgroundColor: 'transparent',
+    backgroundColor: '#e5e5e5',
+    margin: '1rem 0',
+    width: '25%',
     '@media (max-width: 992px)': {
-      marginTop: '1rem',
+      width: '50%',
+    },
+    '@media (max-width: 448px)': {
+      width: '100%',
     }
   },
   button: {
-    backgroundColor: '#222',
-    color: '#fff',
+    color: '#3d3d3d',
     borderRadius: '3px',
-    border: '1px solid #222',
-    marginLeft: '1rem',
+    border: '1px solid #e5e5e5',
     textAlign: 'center',
-    width: '100%',
+    width: '25%',
     '@media (max-width: 992px)': {
       marginLeft: 0,
       marginTop: '1rem',
-    }
+      width: '50%',
+    },
+    '@media (max-width: 448px)': {
+      width: '100%',
+    },
+  },
+  buttonUnsubmitted: {
+    backgroundColor: '#e5e5e5',
+  },
+  buttonSubmitted: {
+    backgroundColor: primary,
+  },
+  checkbox: {
+    marginLeft: 10,
   }
 }
 
