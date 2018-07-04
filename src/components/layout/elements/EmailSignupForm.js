@@ -15,7 +15,6 @@ class EmailSignupForm extends Component {
       name: '',
       email: '',
       wantsCasePacket: true,
-      wantsUpdates: false,
       submitted: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -33,66 +32,58 @@ class EmailSignupForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     document.getElementById("buttonSubmitEmailForm").innerHTML = "Submiting...";
-    base('Website Email Subscribers').create({
+    base('People who requested a case packet').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
-      "Wants Case Packet?": `${this.state.wantsCasePacket}`,
-      "Wants Updates?": `${this.state.wantsUpdates}`
+      "Wants Case Packet?": `${this.state.wantsCasePacket}`
     }, {typecast: true}, function(err, record) {
         if (err) {
           console.error(err);
-          alert("Whoops, there was an error submitting your contact information. Please refresh the page and try again.");
+          alert("There was an error submitting your contact information. Please refresh the page and try again. If this keeps happening, email hello@umbn.co for help.");
           return;
         } else {
-          document.getElementById("buttonSubmitEmailForm").innerHTML = "Submitted!";
+          document.getElementById("buttonSubmitEmailForm").innerHTML = "Submitted ✓";
         }
         // console.log(record.getId());
     });
     this.setState({
+      name: '',
+      email: '',
       submitted: true
     });
   };
   render() {
     return (
-      <div style={styles.formText}>
+      <div style={styles.formWrapper}>
         <Title>Request Case Packet</Title>
         <br/>
         <br/>
-        <Paragraph>Want to request our case packet? Submit your contact information below and we'll reach out!</Paragraph>
+        <Paragraph>If you would like to request a case packet, we will personally contact you.</Paragraph>
         <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
-          <label htmlFor="Full name">
+          <label htmlFor="Full name" style={styles.label}>
             <input type="text"
               style={[styles.input, styles.inputAndButton]}
               value={this.state.name}
               onChange={(event) => this.setState({ name: event.target.value })}
               placeholder="Full name" required/>
           </label>
-          <label htmlFor="Email">
+          <label htmlFor="Email" style={styles.label}>
             <input type="email"
               style={[styles.input, styles.inputAndButton]}
               value={this.state.email}
               onChange={(event) => this.setState({ email: event.target.value })}
               placeholder="Email" required/>
           </label>
-          {/* <label>
-            Would you like to request the UMBN Case Packet?
-            <input
-              name="wantsCasePacket"
-              type="checkbox"
-              checked={this.state.wantsCasePacket}
-              onChange={this.handleInputChange} />
-          </label> */}
-          <label>
-            <Paragraph>Want updates? No spam.
+          {/* <label style={styles.label}>
+            <Paragraph>
+              Would you like to request the UMBN Case Packet?
               <input
-                style={styles.checkbox}
-                name="wantsUpdates"
+                name="wantsCasePacket"
                 type="checkbox"
-                checked={this.state.wantsUpdates}
+                checked={this.state.wantsCasePacket}
                 onChange={this.handleInputChange} />
             </Paragraph>
-
-          </label>
+          </label> */}
           <button type="submit" id="buttonSubmitEmailForm"
             style={this.state.submitted === false ? [styles.buttonUnsubmitted, styles.button, styles.inputAndButton] : [styles.buttonSubmitted, styles.button, styles.inputAndButton]}
             >Submit</button>
@@ -108,9 +99,12 @@ const secondary = '#004787';
 
 
 const styles = {
-  formText: {
+  formWrapper: {
     backgroundColor: secondary,
     padding: 30,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
     '@media (max-width: 649px)': { // large mobile
       width: '100%',
       padding: 15,
@@ -123,11 +117,11 @@ const styles = {
 
     '@media (max-width: 992px)': {
       margin: 0,
-      flexDirection: 'column',
     }
   },
   inputAndButton: {
     fontSize: '2em',
+    borderRadius: '3px',
     padding: '0.5rem 0.75rem',
     '@media (max-width: 992px)': {
       padding: '.5rem .57rem',
@@ -138,24 +132,19 @@ const styles = {
     border: '1px solid #222',
     backgroundColor: '#e5e5e5',
     margin: '1rem 0',
-    width: '25%',
-    '@media (max-width: 992px)': {
-      width: '50%',
-    },
+    width: 400,
     '@media (max-width: 448px)': {
       width: '100%',
     }
   },
   button: {
     color: '#3d3d3d',
-    borderRadius: '3px',
     border: '1px solid #e5e5e5',
     textAlign: 'center',
-    width: '25%',
+    width: 400,
+    margin: '1rem 0',
     '@media (max-width: 992px)': {
       marginLeft: 0,
-      marginTop: '1rem',
-      width: '50%',
     },
     '@media (max-width: 448px)': {
       width: '100%',
@@ -165,11 +154,11 @@ const styles = {
     backgroundColor: '#e5e5e5',
   },
   buttonSubmitted: {
-    backgroundColor: primary,
+    backgroundColor: '#e5e5e5',
   },
   checkbox: {
     marginLeft: 10,
-  }
+  },
 }
 
 export default Radium(EmailSignupForm);

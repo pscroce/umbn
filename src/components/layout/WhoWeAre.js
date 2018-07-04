@@ -69,7 +69,7 @@ function WhoWeAre() {
               </a>
             </div>
             <Label>
-              Product Lead
+              Product Thinker
             </Label>
             <Paragraph>
               A people-oriented product manager and former front-end developer (React, node, others), Peter is driven to use the internet to get people off the internet. Through facilitation and follow up, he guides teams through painful ambiguity to the promised land of functional prototypes, agile iterations, and ultimately to products that create value consistently over time, at the right pace, and with the right side effects.
