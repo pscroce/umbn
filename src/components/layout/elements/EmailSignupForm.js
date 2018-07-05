@@ -125,16 +125,15 @@ const styles = {
   },
   inputAndButton: {
     fontSize: '2em',
-    borderRadius: '3px',
     padding: '0.5rem 0.75rem',
     '@media (max-width: 992px)': {
       padding: '.5rem .57rem',
     }
   },
   input: {
-    borderRadius: 3,
-    border: '1px solid #222',
-    backgroundColor: '#e5e5e5',
+    border: 'none',
+    borderBottom: `1px solid ${primary}`,
+    backgroundColor: 'transparent',
     margin: '1rem 0',
     width: 400,
     '@media (max-width: 448px)': {
@@ -142,6 +141,7 @@ const styles = {
     }
   },
   button: {
+    borderRadius: '3px',
     color: '#3d3d3d',
     border: '1px solid #e5e5e5',
     textAlign: 'center',

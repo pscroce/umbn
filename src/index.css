@@ -23,6 +23,16 @@ p {
   }
 }
 
+::placeholder {
+  color: white;
+}
+input, textarea {
+  color: white !important;
+}
+textarea, select, input, button {
+  outline: none;
+}
+
 a, a:visited {
   color: #eee;
   fill: #eee;
