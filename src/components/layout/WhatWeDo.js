@@ -10,7 +10,7 @@ import Label from '../layout/elements/Label';
 
 import legoImg from '../../imgs/lego.jpg';
 import cpsImg from '../../imgs/cps.jpg';
-import hcdSprint from '../../imgs/hcd-sprint.jpg';
+import designSprint from '../../imgs/design-sprint.jpg';
 import businessImprov from '../../imgs/business-improv.jpg';
 
 
@@ -31,7 +31,7 @@ function WhatWeDo() {
 
           <div style={styles.whatWeDoText}>
             <Subtitle>
-              Human Centered Design Sprint
+              Design Sprint
             </Subtitle>
 
             <Paragraph>
@@ -44,7 +44,7 @@ function WhatWeDo() {
               ability to rise to any challenge.
             </Paragraph>
           </div>
-          <div style={[styles.whatWeDoImg, styles.hcdSprint]}></div>
+          <div style={[styles.whatWeDoImg, styles.designSprint]}></div>
         </Card>
 
 
@@ -191,8 +191,8 @@ const styles = {
   legoImg: {
     backgroundImage: `url(${legoImg})`,
   },
-  hcdSprint: {
-    backgroundImage: `url(${hcdSprint})`,
+  designSprint: {
+    backgroundImage: `url(${designSprint})`,
   },
   businessImprov: {
     backgroundImage: `url(${businessImprov})`,

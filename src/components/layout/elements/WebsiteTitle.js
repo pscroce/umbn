@@ -1,9 +1,9 @@
 import React from 'react';
 import Radium from 'radium';
 
-function Title(props) {
+function WebsiteTitle(props) {
   return (
-    <h2 style={styles.title}>{props.children}</h2>
+    <h1 style={styles.title}>{props.children}</h1>
   )
 }
 
@@ -32,4 +32,4 @@ const styles = {
   },
 }
 
-export default Radium(Title);
+export default Radium(WebsiteTitle);

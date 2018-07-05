@@ -25,7 +25,7 @@ function PastClients() {
     <div style={styles.pastClients}>
       <Section>
         <Subtitle>
-          We've done it for them. We can do it for you.
+          We've worked with a lot of good people.
         </Subtitle>
         {/* <Paragraph>
           We design meetings that result in clarity, creativity, and action. We

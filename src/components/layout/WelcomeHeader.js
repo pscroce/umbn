@@ -4,7 +4,7 @@ import Radium from 'radium';
 import Section from '../layout/elements/Section';
 import SectionLeft from '../layout/elements/SectionLeft';
 import Subtitle from '../layout/elements/Subtitle';
-import Title from '../layout/elements/Title';
+import WebsiteTitle from '../layout/elements/WebsiteTitle';
 
 import laughingImg from '../../imgs/laughing.png';
 
@@ -14,9 +14,9 @@ function WelcomeHeader() {
       <div style={styles.welcomeHeader}>
       <Section>
         <SectionLeft>
-          <Title>
+          <WebsiteTitle>
             Transform Meetings
-          </Title>
+          </WebsiteTitle>
 
           <Subtitle>
             We use play to accelerate creative problem-solving and bring teams together.
