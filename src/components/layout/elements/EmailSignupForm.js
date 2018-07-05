@@ -32,7 +32,7 @@ class EmailSignupForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     document.getElementById("buttonSubmitEmailForm").innerHTML = "Submiting...";
-    base('People who requested a case packet').create({
+    base('People Who Requested a Case Packet').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
       "Wants Case Packet?": `${this.state.wantsCasePacket}`
