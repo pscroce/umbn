@@ -41,7 +41,7 @@ function WhoWeAre() {
               Lead Facilitator
             </Label>
             <Paragraph>
-              Working with teams and an endless supply of post-it notes is Annemarie's forte. Through a diverse set of techniques for any occasion, she designs and runs effective group sessions that result in actionable next steps using methods such as Human Centered Design sprints, Osborn-Parnes Creative Problem Solving, LEGO® Serious Play®, the FourSight® Creative Thinking System, and Improv training.
+              Working with teams and an endless supply of post-it notes is Annemarie's forte. Through a diverse set of techniques for any occasion, she designs and runs effective group sessions that result in actionable next steps using methods such as Design Sprints, Osborn-Parnes Creative Problem Solving, LEGO® Serious Play®, the FourSight® Creative Thinking System, and Improv training.
             </Paragraph>
           </div>
 
@@ -72,7 +72,7 @@ function WhoWeAre() {
               Product Thinker
             </Label>
             <Paragraph>
-              A people-oriented product manager and former front-end developer (React, node, others), Peter is driven to use the internet to get people off the internet. Through facilitation and follow up, he guides teams through painful ambiguity to the promised land of functional prototypes, agile iterations, and ultimately to products that create value consistently over time, at the right pace, and with the right side effects.
+              Through facilitation and follow up, Peter guides teams through painful ambiguity to the promised land of functional prototypes, agile iterations, and ultimately to products that create value consistently over time, at the right pace, and with the right side effects. He works with the good people at <a href="https://postlight.com" target="_blank" rel="noopener noreferrer">Postlight</a> in New York City.
             </Paragraph>
           </div>
 
