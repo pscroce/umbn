@@ -57,8 +57,8 @@ class EmailSignupForm extends Component {
       <div style={styles.formWrapper}>
         <Title>Request Case Packet</Title>
         <br/>
-        <br/>
         <Paragraph>If you would like to request a case packet, we will personally contact you.</Paragraph>
+        <br/>
         <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
           <label htmlFor="Full name" style={styles.label}>
             <input type="text"
@@ -102,9 +102,12 @@ const styles = {
   formWrapper: {
     backgroundColor: secondary,
     padding: 30,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+
+    '@media (min-width: 650px)': { // not large mobile
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
     '@media (max-width: 649px)': { // large mobile
       width: '100%',
       padding: 15,
