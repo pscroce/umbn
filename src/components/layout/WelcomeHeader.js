@@ -19,7 +19,7 @@ function WelcomeHeader() {
           </Title>
 
           <Subtitle>
-            We know play is key to productive and creative business. And we know how to get there.
+            We use play to accelerate creative problem-solving and bring teams together.
           </Subtitle>
           <br/>
         </SectionLeft>
