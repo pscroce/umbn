@@ -3,7 +3,6 @@ import Radium from 'radium';
 
 import Section from '../layout/elements/Section';
 import Subtitle from '../layout/elements/Subtitle';
-import Paragraph from '../layout/elements/Paragraph';
 
 import bloominBrandsLogo from '../../imgs/logos/bloomin-brands-logo.png';
 import fisLogo from '../../imgs/logos/fis-logo.png';

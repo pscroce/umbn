@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Radium from 'radium';
 import Airtable from 'airtable';
 
-import Section from '../elements/Section';
 import Title from '../elements/Title';
 import Paragraph from '../elements/Paragraph';
 
