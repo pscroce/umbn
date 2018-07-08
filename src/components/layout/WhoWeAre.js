@@ -94,27 +94,21 @@ const styles = {
   titleArea: {
     backgroundColor: secondary,
     // clipPath: 'polygon(100% 0, 100% 50%, 61% 75%, 27% 80%, 0 100%, 0 0)',
-    clipPath: 'polygon(100% 0, 100% 60%, 61% 85%, 27% 95%, 0 100%, 0 20%)',
+    // clipPath: 'polygon(100% 0, 100% 60%, 61% 85%, 27% 95%, 0 100%, 0 20%)',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
-    minHeight: 200,
-    paddingTop: 40,
     paddingLeft: 30,
 
     '@media (max-width: 992px)': { // tablet
       alignItems: 'flex-start',
-      minHeight: 170,
-      paddingTop: 0,
 
     },
     '@media (max-width: 649px)': { // mobile medium
-      minHeight: 130,
       paddingLeft: 15,
 
     },
     '@media (max-width: 480px)': { // mobile
-      minHeight: 100,
     },
   },
   teamMemberName: {
