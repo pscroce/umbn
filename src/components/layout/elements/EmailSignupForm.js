@@ -30,19 +30,20 @@ class EmailSignupForm extends Component {
   }
   handleSubmit = (event) => {
     event.preventDefault();
-    document.getElementById("buttonSubmitEmailForm").innerHTML = "Submiting...";
+    var buttonSubmit = document.getElementById("buttonSubmitEmailForm");
+    buttonSubmit.innerHTML = "Submiting...";
     base('People Who Requested a Case Packet').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
       "Wants Case Packet?": `${this.state.wantsCasePacket}`,
-      "Who is contacting them?": "annemarie@umbn.co"
+      "Who is contacting them?": "peter@umbn.co"
     }, {typecast: true}, function(err, record) {
         if (err) {
           console.error(err);
           alert("There was an error submitting your contact information. Please refresh the page and try again. If this keeps happening, email hello@umbn.co for help.");
           return;
         } else {
-          document.getElementById("buttonSubmitEmailForm").innerHTML = "Submitted ✓";
+          buttonSubmit.innerHTML = "Submitted 👍";
         }
         // console.log(record.getId());
     });
@@ -60,20 +61,27 @@ class EmailSignupForm extends Component {
         <Paragraph>If you would like to request a case packet, we will personally contact you.</Paragraph>
         <br/>
         <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
-          <label htmlFor="Full name" style={styles.label}>
+          <div className="inputGroup">
             <input type="text"
               style={[styles.input, styles.inputAndButton]}
               value={this.state.name}
               onChange={(event) => this.setState({ name: event.target.value })}
-              placeholder="Full name" required/>
-          </label>
-          <label htmlFor="Email" style={styles.label}>
-            <input type="email"
+              required/>
+            <label htmlFor="Full name" style={styles.label}>
+              Full name
+            </label>
+          </div>
+          <div className="inputGroup">
+            <input type="text"
               style={[styles.input, styles.inputAndButton]}
               value={this.state.email}
               onChange={(event) => this.setState({ email: event.target.value })}
-              placeholder="Email" required/>
-          </label>
+              required/>
+            <label htmlFor="Email" style={styles.label}>
+              Email
+            </label>
+          </div>
+
           {/* <label style={styles.label}>
             <Paragraph>
               Would you like to request the UMBN Case Packet?
@@ -130,6 +138,7 @@ const styles = {
     }
   },
   input: {
+    borderRadius: 0,
     border: 'none',
     borderBottom: `1px solid ${primary}`,
     backgroundColor: 'transparent',
@@ -162,6 +171,9 @@ const styles = {
   checkbox: {
     marginLeft: 10,
   },
+  label: {
+    color: 'white',
+  }
 }
 
 export default Radium(EmailSignupForm);

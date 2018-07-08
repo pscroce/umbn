@@ -23,16 +23,63 @@ p {
   }
 }
 
+/* Forms */
 ::placeholder {
   color: white;
 }
 input, textarea {
   color: white !important;
+  background-color: #004787;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(180deg,transparent 97%,rgba(101, 163, 214) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
 }
 textarea, select, input, button {
   outline: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #004787 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+input:focus, input:active,
+textarea:focus, textarea:active {
+  background-image: linear-gradient(180deg,transparent 97%,rgba(101, 163, 214) 0);
+  background-size: 100% 100%;
+}
+/* material design label styling */
+.inputGroup {
+  position:relative;
+  margin-bottom:25px;
+}
+label {
+  font-size:2em;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:25px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+input:focus ~ label, input:valid ~ label {
+  top:-5px;
+  left: 0;
+  font-size:1em;
+}
 
+/* Links */
 a, a:visited {
   color: #eee;
   fill: #eee;
