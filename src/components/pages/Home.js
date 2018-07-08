@@ -15,9 +15,9 @@ function Home() {
 
       <PastClients></PastClients>
 
-      <WhoWeAre></WhoWeAre>
-
       <WhatWeDo></WhatWeDo>
+
+      <WhoWeAre></WhoWeAre>
 
       <Footer></Footer>
     </div>

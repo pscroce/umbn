@@ -133,15 +133,15 @@ function WhatWeDo() {
 }
 
 // Colors
-const primary = '#65a3d6';
-// const secondary = '#004787';
+// const primary = '#65a3d6';
+const secondary = '#004787';
 // const darkGray = '#1c1c1c';
 // const lightGray = '#bcbcbc';
 // const backgroundColor = '#eee';
 
 const styles = {
   titleArea: {
-    backgroundColor: primary,
+    backgroundColor: secondary,
     // clipPath: 'polygon(100% 0, 100% 50%, 61% 75%, 27% 80%, 0 100%, 0 0)',
     // clipPath: 'polygon(100% 0, 100% 60%, 61% 85%, 27% 95%, 0 100%, 0 20%)',
     display: 'flex',
@@ -162,7 +162,7 @@ const styles = {
   },
   whatWeDoText: {
     width: '50%',
-    backgroundColor: primary,
+    backgroundColor: secondary,
     padding: 30,
     '@media (max-width: 649px)': { // large mobile
       width: '100%',
