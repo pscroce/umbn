@@ -13,7 +13,7 @@ class EmailSignupForm extends Component {
     this.state = {
       name: '',
       email: '',
-      wantsCasePacket: true,
+      whyInterested: '',
       submitted: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,11 +31,12 @@ class EmailSignupForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     var buttonSubmit = document.getElementById("buttonSubmitEmailForm");
-    buttonSubmit.innerHTML = "Submiting...";
+    buttonSubmit.innerHTML = "Submitting...";
     base('People Who Requested a Case Packet').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
-      "Wants Case Packet?": `${this.state.wantsCasePacket}`,
+      "Why interested?": `${this.state.whyInterested}`,
+      // "Wants Case Packet?": `${this.state.wantsCasePacket}`,
       "Who is contacting them?": "peter@umbn.co"
     }, {typecast: true}, function(err, record) {
         if (err) {
@@ -50,6 +51,7 @@ class EmailSignupForm extends Component {
     this.setState({
       name: '',
       email: '',
+      whyInterested: '',
       submitted: true
     });
   };
@@ -58,7 +60,7 @@ class EmailSignupForm extends Component {
       <div style={styles.formWrapper}>
         <Title>Request Case Packet</Title>
         <br/>
-        <Paragraph>If you would like to request a case packet, we will personally contact you.</Paragraph>
+        <Paragraph>If you would like to request a case packet, we will contact you personally.</Paragraph>
         <br/>
         <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
           <div className="inputGroup">
@@ -79,6 +81,18 @@ class EmailSignupForm extends Component {
               required/>
             <label htmlFor="Email" style={styles.label}>
               Email
+            </label>
+          </div>
+          <div className="inputGroup">
+            <input type="text"
+              style={[styles.input, styles.inputAndButton]}
+              value={this.state.whyInterested}
+              onChange={(event) => this.setState({ whyInterested: event.target.value })}
+              required
+              />
+
+            <label htmlFor="Why are you interested?">
+              Why are you interested?
             </label>
           </div>
 
@@ -131,7 +145,7 @@ const styles = {
     }
   },
   inputAndButton: {
-    fontSize: '2em',
+    fontSize: '1.5em',
     padding: '0.5rem 0.75rem',
     '@media (max-width: 992px)': {
       padding: '.5rem .57rem',
@@ -141,9 +155,9 @@ const styles = {
     borderRadius: 0,
     border: 'none',
     borderBottom: `1px solid ${primary}`,
-    backgroundColor: 'transparent',
     margin: '1rem 0',
     width: 400,
+    fontSize: '1.5em',
     '@media (max-width: 448px)': {
       width: '100%',
     }

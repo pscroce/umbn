@@ -24,7 +24,7 @@ p {
 }
 
 /* Forms */
-::placeholder {
+::placeholder, label {
   color: white;
 }
 input, textarea {
@@ -63,7 +63,7 @@ textarea:focus, textarea:active {
   margin-bottom:25px;
 }
 label {
-  font-size:2em;
+  font-size:1.5em;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
@@ -73,7 +73,8 @@ label {
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
-input:focus ~ label, input:valid ~ label {
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label, textarea:valid ~ label {
   top:-5px;
   left: 0;
   font-size:1em;
