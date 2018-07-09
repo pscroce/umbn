@@ -45,10 +45,11 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
-    minHeight: '100vh',
+    minHeight: 800,
     paddingBottom: 40,
     '@media (max-width: 992px)': { // mobile medium
       backgroundPosition: '0% 10%',
+      minHeight: 400,
     },
     '@media (max-width: 480px)': { // mobile
       backgroundPosition: '0% 5%',
@@ -56,8 +57,8 @@ const styles = {
     },
   },
   background: {
-    backgroundSize: '100%',
-    minHeight: '100vh',
+    // backgroundSize: '100%',
+    // minHeight: '100vh',
     background: 'linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(101,163,214,1) 75%)',
   },
 }

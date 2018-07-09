@@ -6,8 +6,6 @@ import {
   Route,
   Switch } from 'react-router-dom';
 
-import Navigation from './components/layout/Navigation';
-
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 
@@ -20,8 +18,6 @@ class App extends Component {
         <div style={styles.app}>
           <Router>
             <div>
-              <Navigation />
-
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
@@ -37,8 +33,8 @@ class App extends Component {
 
 const styles = {
   app: {
-    backgroundImage: 'linear-gradient(180deg, rgba(101,163,214,1) 0%, rgba(238,238,238,1) 75%)',
-
+    // backgroundImage: 'linear-gradient(180deg, rgba(101,163,214,1) 0%, rgba(238,238,238,1) 75%)',
+    backgroundColor: '#eee',
     minHeight: '100vh',
     width: '100%',
     overflow: 'hidden',

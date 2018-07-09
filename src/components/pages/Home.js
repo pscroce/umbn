@@ -6,11 +6,16 @@ import PastClients from '../layout/PastClients';
 import WhoWeAre from '../layout/WhoWeAre';
 import WhatWeDo from '../layout/WhatWeDo';
 import Footer from '../layout/Footer';
+import Navigation from '../layout/Navigation';
+
 
 function Home() {
 
   return (
-    <div>
+    <div style={styles.home}>
+
+      <Navigation />
+
       <WelcomeHeader></WelcomeHeader>
 
       <PastClients></PastClients>
@@ -28,12 +33,16 @@ function Home() {
 // const primary = '#65a3d6';
 // const secondary = '#004787';
 // const darkGray = '#1c1c1c';
-// const lightGray = '#bcbcbc';
+const lightGray = '#bcbcbc';
 // const backgroundColor = '#eee';
 //
-// const styles = {
-//
-//
-// }
+const styles = {
+  home: {
+    maxWidth: 2000,
+    margin: '0 auto',
+    position: 'relative',
+  }
+
+}
 
 export default Radium(Home);
