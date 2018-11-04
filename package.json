@@ -1,7 +1,7 @@
 {
   "name": "UMBN",
   "version": "0.1.0",
-  "homepage": "http://focus.pcroce.com",
+  "homepage": "https://umbn.com",
   "private": true,
   "dependencies": {
     "airtable": "^0.5.4",
@@ -19,7 +19,8 @@
     "build-surge": "react-scripts build && mv build/index.html build/200.html",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "radium": "css-to-radium < utils/css.css > utils/css.js"
+    "radium": "css-to-radium < utils/css.css > utils/css.js",
+    "push": "git push && react-scripts build && netlify deploy"
   },
   "devDependencies": {
     "css-to-radium": "^1.0.3"
