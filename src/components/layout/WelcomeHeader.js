@@ -45,15 +45,18 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
-    minHeight: 800,
+    minHeight: "100vh",
     paddingBottom: 40,
+    marginBottom: 30,
     '@media (max-width: 992px)': { // mobile medium
       backgroundPosition: '0% 10%',
       minHeight: 400,
+      marginBottom: 20,
     },
     '@media (max-width: 480px)': { // mobile
       backgroundPosition: '0% 5%',
       paddingBottom: 70,
+      marginBottom: 10,
     },
   },
   background: {

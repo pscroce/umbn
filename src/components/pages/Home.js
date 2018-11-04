@@ -18,8 +18,6 @@ function Home() {
 
       <WelcomeHeader></WelcomeHeader>
 
-      <PastClients></PastClients>
-
       <WhatWeDo></WhatWeDo>
 
       <WhoWeAre></WhoWeAre>
