@@ -2,7 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 // import { NavLink as ReactRouterNavLink } from 'react-router-dom';
 import '../../index.css';
-import wordmark from '../../imgs/umbn-wordmark.png';
+import wordmark from '../../imgs/umbn-wordmark.svg';
 
 // const NavLink = Radium(ReactRouterNavLink);
 // this isn't working: https://github.com/FormidableLabs/radium/issues/398
@@ -19,8 +19,16 @@ const styles = {
   wordmark: {
     height: 50,
     position: 'absolute',
-    top: 20,
+    top: 30,
     left: 30,
+    '@media (max-width: 649px)': { // mobile medium
+      height: 35,
+
+      top: 20,
+
+      left: 20,
+
+    },
     '@media (max-width: 480px)': {
       height: 27,
       top: 10,

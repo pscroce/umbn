@@ -69,7 +69,7 @@ function WhoWeAre() {
               </a>
             </div>
             <Label>
-              Product Manager
+              Product Facilitator
             </Label>
             <Paragraph>
               Through facilitation and follow up, Peter guides teams through ambiguity to the promised land of functional prototypes, agile iterations, and ultimately to products or services that create value reliably over time, at the right pace, and with the right side effects. He has formal improv training and is a certified facilitator of LEGO® Serious Play®. He works with the good people at <a href="https://postlight.com" target="_blank" rel="noopener noreferrer">Postlight</a> in New York City.

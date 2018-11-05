@@ -10,7 +10,7 @@ import laughingImg from '../../imgs/laughing.png';
 
 function WelcomeHeader() {
   return (
-    <div style={styles.background}>
+    <div>
       <div style={styles.welcomeHeader}>
       <Section>
         <SectionLeft>
@@ -47,23 +47,19 @@ const styles = {
     justifyContent: 'flex-end',
     minHeight: "100vh",
     paddingBottom: 40,
-    marginBottom: 30,
+    margin: "0px 0 30px 30px",
     '@media (max-width: 992px)': { // mobile medium
       backgroundPosition: '0% 10%',
       minHeight: 400,
-      marginBottom: 20,
+      margin: "0px 0 20px 20px",
     },
     '@media (max-width: 480px)': { // mobile
       backgroundPosition: '0% 5%',
       paddingBottom: 70,
-      marginBottom: 10,
+      margin: "0px 0 10px 10px",
     },
   },
-  background: {
-    // backgroundSize: '100%',
-    // minHeight: '100vh',
-    background: 'linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(101,163,214,1) 75%)',
-  },
+
 }
 
 export default Radium(WelcomeHeader);

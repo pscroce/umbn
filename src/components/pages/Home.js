@@ -12,7 +12,7 @@ import Navigation from '../layout/Navigation';
 function Home() {
 
   return (
-    <div style={styles.home}>
+    <div style={[styles.home, styles.background]}>
 
       <Navigation />
 
@@ -39,7 +39,12 @@ const styles = {
     maxWidth: 2000,
     margin: '0 auto',
     position: 'relative',
-  }
+  },
+  background: {
+    // backgroundSize: '100%',
+    // minHeight: '100vh',
+    background: 'linear-gradient(290deg, rgba(238,238,238,1) 0%, rgba(101,163,214,1) 75%)',
+  },
 
 }
 
