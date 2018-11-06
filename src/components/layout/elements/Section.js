@@ -16,7 +16,7 @@ const styles = {
       margin: '20px 20px 0 20px',
     },
     '@media (max-width: 480px)': {
-      margin: '10px 10px 0 10px',
+      margin: '10px 0 10px 0',
     },
   },
 }

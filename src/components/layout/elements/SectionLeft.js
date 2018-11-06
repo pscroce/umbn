@@ -11,12 +11,18 @@ function SectionLeft(props) {
 
 const styles = {
   section: {
-    width: '70%',
+    width: '50%',
+    '@media (max-width: 1200px)': { // tablet
+      width: '70%',
+    },
     '@media (max-width: 992px)': { // tablet
       width: '75%',
     },
     '@media (max-width: 649px)': { // large mobile
       width: '100%',
+    },
+    '@media (max-width: 480px)': {
+      margin: '0 10px 0 10px',
     },
   },
 }

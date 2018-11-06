@@ -47,16 +47,16 @@ const styles = {
     justifyContent: 'flex-end',
     minHeight: "100vh",
     paddingBottom: 40,
-    margin: "0px 0 30px 30px",
+    margin: "0px 30px 30px 30px",
     '@media (max-width: 992px)': { // mobile medium
       backgroundPosition: '0% 10%',
-      minHeight: 400,
-      margin: "0px 0 20px 20px",
+      minHeight: 300,
+      margin: "0px 20px 20px 20px",
     },
     '@media (max-width: 480px)': { // mobile
       backgroundPosition: '0% 5%',
-      paddingBottom: 70,
-      margin: "0px 0 10px 10px",
+      paddingBottom: 0,
+      margin: "0px 0 10px 0",
     },
   },
 
