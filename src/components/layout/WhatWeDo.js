@@ -148,13 +148,15 @@ const styles = {
     justifyContent: 'center',
     flexDirection: 'column',
     paddingLeft: 30,
-
+    marginTop: 30,
     '@media (max-width: 992px)': { // tablet
       alignItems: 'flex-start',
+      marginTop: 20,
 
     },
     '@media (max-width: 649px)': { // mobile medium
       paddingLeft: 15,
+      marginTop: 10,
 
     },
     '@media (max-width: 480px)': { // mobile
