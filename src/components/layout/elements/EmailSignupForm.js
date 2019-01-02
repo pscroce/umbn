@@ -35,9 +35,9 @@ class EmailSignupForm extends Component {
     base('People Who Requested a Case Packet').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
-      "Why interested?": `${this.state.whyInterested}`,
+      "Why interested?": `${this.state.whyInterested}`
       // "Wants Case Packet?": `${this.state.wantsCasePacket}`,
-      "Who is contacting them?": "peter@umbn.co"
+      // "Who is contacting them?": "annemarie@umbn.co"
     }, {typecast: true}, function(err, record) {
         if (err) {
           console.error(err);
