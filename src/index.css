@@ -6,6 +6,11 @@ Dark Accent #1c1c1c
 Mid Accent #777777
 Light Accent #bcbcbc
 */
+:root {
+  --primary: #65a3d6;
+  --secondary: #004787;
+  --lightGray: #e5e5e5;
+}
 
 body {
   margin: 0;
@@ -27,16 +32,42 @@ p {
 ::placeholder, label {
   color: white;
 }
-input, textarea {
-  color: white !important;
-  background-color: #004787;
+textarea {
+  color: var(--lightGray) !important;
+  background-color: var(--secondary);
   transition: all 0.3s ease-in-out;
   background-image: linear-gradient(180deg,transparent 97%,rgba(101, 163, 214) 0);
   background-size: 0 100%;
   background-repeat: no-repeat;
+  border-radius: 3px;
+  border: 1px solid var(--lightGray);
+}
+input {
+  color: var(--lightGray) !important;
+  background-color: var(--secondary);
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(180deg,transparent 97%,rgba(101, 163, 214) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid var(--lightGray);
 }
 textarea, select, input, button {
   outline: none;
+}
+button {
+  background-color: #e5e5e5;
+  color: #3d3d3d;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(180deg,transparent 0%, var(--primary) 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  border: none;
+}
+button:active, button:focus {
+  background-size: 100% 100%;
+  color: #e5e5e5;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -52,10 +83,15 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #004787 inset;
   transition: background-color 5000s ease-in-out 0s;
 }
-input:focus, input:active,
 textarea:focus, textarea:active {
   background-image: linear-gradient(180deg,transparent 97%,rgba(101, 163, 214) 0);
   background-size: 100% 100%;
+  border: 1px solid var(--primary);
+}
+input:focus, input:active {
+  background-image: linear-gradient(180deg,transparent 97%,rgba(101, 163, 214) 0);
+  background-size: 100% 100%;
+  border-bottom: 1px solid var(--primary);
 }
 /* material design label styling */
 .inputGroup {
@@ -63,21 +99,25 @@ textarea:focus, textarea:active {
   margin-bottom:25px;
 }
 label {
-  font-size:1.5em;
+  color: var(--lightGray);
+  font-size:1.5rem;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
-  left:5px;
-  top:25px;
+  left:7px;
+  top:28px;
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
+  padding: 0px 5px;
 }
 input:focus ~ label, input:valid ~ label,
 textarea:focus ~ label, textarea:valid ~ label {
-  top:-5px;
-  left: 0;
-  font-size:1em;
+  top:5px;
+  left: -2px;
+  font-size:.9rem;
+  background-color: var(--secondary);
+
 }
 
 /* Links */

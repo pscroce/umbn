@@ -32,7 +32,7 @@ class EmailSignupForm extends Component {
     event.preventDefault();
     var buttonSubmit = document.getElementById("buttonSubmitEmailForm");
     buttonSubmit.innerHTML = "Submitting...";
-    base('People Who Requested a Case Packet').create({
+    base('PEOPLE WHO WANT TO TALK TO US').create({
       "Name": `${this.state.name}`,
       "Email": `${this.state.email}`,
       "Why interested?": `${this.state.whyInterested}`
@@ -58,10 +58,7 @@ class EmailSignupForm extends Component {
   render() {
     return (
       <div style={styles.formWrapper}>
-        <Title>Request Case Packet</Title>
-        <br/>
-        <Paragraph>If you would like to request a case packet, we will contact you personally.</Paragraph>
-        <br/>
+        <Title>Want to talk?</Title>
         <form onSubmit={this.handleSubmit} style={styles.emailSignupForm}>
           <div className="inputGroup">
             <input type="text"
@@ -84,15 +81,14 @@ class EmailSignupForm extends Component {
             </label>
           </div>
           <div className="inputGroup">
-            <input type="text"
+            <textarea type="text" rows="5"
               style={[styles.input, styles.inputAndButton]}
               value={this.state.whyInterested}
               onChange={(event) => this.setState({ whyInterested: event.target.value })}
-              required
-              />
+              required/>
 
-            <label htmlFor="Why are you interested?">
-              Why are you interested?
+            <label htmlFor="What do you want to talk about?">
+              What do you want to talk about?
             </label>
           </div>
 
@@ -141,53 +137,41 @@ const styles = {
     flexDirection: 'column',
 
     '@media (max-width: 992px)': {
-      margin: 0,
+      margin: '1.5rem 0',
     }
   },
   inputAndButton: {
     fontSize: '1.5em',
-    padding: '0.5rem 0.75rem',
-    '@media (max-width: 992px)': {
-      padding: '.5rem .57rem',
-    }
   },
   input: {
-    borderRadius: 0,
-    border: 'none',
-    borderBottom: `1px solid ${primary}`,
     margin: '1rem 0',
     width: 400,
-    fontSize: '1.5em',
+    padding: '0.75rem 0.75rem',
+    '@media (max-width: 992px)': {
+      padding: '.75rem .57rem',
+    },
     '@media (max-width: 448px)': {
       width: '100%',
     }
   },
   button: {
     borderRadius: '3px',
-    color: '#3d3d3d',
-    border: '1px solid #e5e5e5',
     textAlign: 'center',
     width: 400,
+    height: 47,
     margin: '1rem 0',
+    padding: '0.5rem 0.75rem',
     '@media (max-width: 992px)': {
       marginLeft: 0,
+      padding: '.5rem .57rem',
     },
     '@media (max-width: 448px)': {
       width: '100%',
     },
   },
-  buttonUnsubmitted: {
-    backgroundColor: '#e5e5e5',
-  },
-  buttonSubmitted: {
-    backgroundColor: '#e5e5e5',
-  },
   checkbox: {
     marginLeft: 10,
   },
-  label: {
-    color: 'white',
-  }
 }
 
 export default Radium(EmailSignupForm);
