@@ -31,7 +31,7 @@ function WhatWeDo() {
 
           <div style={styles.whatWeDoText}>
             <Subtitle>
-              Design Sprint
+              Meeting Design
             </Subtitle>
 
             <Paragraph>
@@ -62,14 +62,14 @@ function WhatWeDo() {
             from a lifetime of conversation” - Plato
             </Paragraph>
             <Paragraph>
-              The LEGO<sup>®</sup> Serious Play methodology is designed to enhance
+              The LEGO<sup>®</sup> Serious Play methodology is designed to enhance team
               innovation and business performance. This strategy produces a more
               meaningful understanding of the world and its possibilities.
             </Paragraph>
             <Paragraph>
               We love employing this “hands on, minds on” methodology
-              to create a more reflective atmosphere and engage participants in
-              deeper, more effective dialogue.
+              to instigate a reflective atmosphere and engage participants in
+              deeply proactive dialogue.
             </Paragraph>
           </div>
 
@@ -92,8 +92,8 @@ function WhatWeDo() {
             <Paragraph>
               One of our most commonly used methods is the CPS Model. Using
               recent research and plain language, this approach is comprised of four
-              explicit process steps: Clarify the problem, Ideate on possible
-              solutions, Develop the best solution, and Implement the final strategy.
+              explicit process steps: <i>clarify</i> the problem, <i>ideate</i> on possible
+              solutions, <i>develop</i> the best solution, and <i>implement</i> the resultant strategy.
             </Paragraph>
             <Paragraph>
               Within this process, UMBN designs a customized suite of tools to meet
@@ -115,12 +115,12 @@ function WhatWeDo() {
           <div style={styles.whatWeDoText}>
             <Subtitle>Business Improv</Subtitle>
             <Paragraph>
-              In today’s ever changing world, mental agility is essential. At UMBN,
-              we customize Improvisational tools and skill sets to help teams
+              In today’s ever-changing world, mental agility is essential. At UMBN,
+              we customize improvisational tools and skill sets to help teams
               embrace uncertainty, learn to view change as opportunity, and value
               collaboration with their team. Through fun, high-energy Improv
-              workshops, teams become more cohesive, adaptable and open-
-              minded to the “Yes, and” approach to life and business.
+              workshops, teams become more cohesive, adaptable and open-minded
+              to the “Yes, and” approach to life and business.
             </Paragraph>
           </div>
 

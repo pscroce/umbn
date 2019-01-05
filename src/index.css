@@ -17,6 +17,9 @@ body {
   padding: 0;
   font-family: 'Lato-Light', sans-serif;
 }
+i {
+  font-family: 'Lato-LightItalic', sans-serif;
+}
 p {
   line-height: 1.5;
   font-size: 1.25em;
