@@ -50,6 +50,7 @@ const styles = {
     margin: "0px 30px 30px 30px",
     '@media (max-width: 992px)': { // mobile medium
       backgroundPosition: '0% 10%',
+      paddingBottom: 0,
       minHeight: 300,
       margin: "0px 20px 20px 20px",
     },
