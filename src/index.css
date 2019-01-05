@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-family: 'Lato-Light', sans-serif;
 }
-i {
+body i {
   font-family: 'Lato-LightItalic', sans-serif;
 }
 p {
@@ -169,6 +169,10 @@ a:hover, a:active {
 @font-face {
   font-family: 'Lato-Light';
   src: local('Lato-Light'), url(./fonts/Lato-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: local('Lato-LightItalic'), url(./fonts/Lato-LightItalic.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Aleo-Light';
