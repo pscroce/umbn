@@ -3,7 +3,7 @@ import Radium from 'radium';
 import Airtable from 'airtable';
 
 import Title from '../elements/Title';
-import Paragraph from '../elements/Paragraph';
+// import Paragraph from '../elements/Paragraph';
 
 var base = new Airtable({apiKey: `${process.env.REACT_APP_AIRTABLE_API_KEY}`}).base('appGdT2hY3InLQ24J');
 
@@ -112,7 +112,7 @@ class EmailSignupForm extends Component {
 }
 
 // Colors
-const primary = '#65a3d6';
+// const primary = '#65a3d6';
 const secondary = '#004787';
 
 

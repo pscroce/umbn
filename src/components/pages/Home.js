@@ -2,15 +2,16 @@ import React from 'react';
 import Radium from 'radium';
 
 import WelcomeHeader from '../layout/WelcomeHeader';
-import PastClients from '../layout/PastClients';
 import WhoWeAre from '../layout/WhoWeAre';
 import WhatWeDo from '../layout/WhatWeDo';
 import Footer from '../layout/Footer';
 import Navigation from '../layout/Navigation';
 
+import ReactGA from 'react-ga';
 
 function Home() {
-
+  ReactGA.initialize('UA-131793898-1');
+  ReactGA.pageview('/');
   return (
     <div style={[styles.home, styles.background]}>
 
@@ -31,7 +32,7 @@ function Home() {
 // const primary = '#65a3d6';
 // const secondary = '#004787';
 // const darkGray = '#1c1c1c';
-const lightGray = '#bcbcbc';
+// const lightGray = '#bcbcbc';
 // const backgroundColor = '#eee';
 //
 const styles = {
