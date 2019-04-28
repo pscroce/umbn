@@ -4,7 +4,7 @@
   "homepage": "https://umbn.com",
   "private": true,
   "dependencies": {
-    "airtable": "^0.5.4",
+    "airtable": "^0.5.10",
     "littlefoot": "^1.0.0",
     "radium": "^0.23.0",
     "react": "^16.4.1",
@@ -12,7 +12,7 @@
     "react-ga": "^2.5.6",
     "react-mailchimp-subscribe": "^1.0.3",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "2.1.8"
+    "react-scripts": "3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +24,7 @@
     "push": "git push && react-scripts build && netlify deploy"
   },
   "devDependencies": {
-    "css-to-radium": "^1.0.3"
+    "css-to-radium": "^1.0.4"
   },
   "browserslist": [
     ">0.2%",
